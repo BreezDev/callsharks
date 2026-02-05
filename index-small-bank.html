@@ -6,23 +6,23 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Banca - Banking & Business Loan Bootstrap-5 HTML Template</title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}" type="image/x-icon">
 
     <!-- CSS here -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/elegant-icons.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/all.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/slick.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/nice-select.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/nouislider.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/flatpickr.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/default.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/elegant-icons.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/all.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/slick.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/slick-theme.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/nice-select.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/nouislider.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/jquery.fancybox.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/flatpickr.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/default.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive.css') }}" media="all" />
 </head>
 
 <body>
@@ -32,7 +32,7 @@
             <div class="round_spinner">
                 <div class="spinner"></div>
                 <div class="text">
-                    <img src="img/logo/Logo-2.png" alt="">
+                    <img src="{{ url_for('static', filename='img/logo/Logo-2.png') }}" alt="">
                 </div>
             </div>
             <h2 class="head">Did You Know?</h2>
@@ -45,8 +45,8 @@
             <nav class="navbar navbar-expand-lg ">
                 <div class="container">
                     <a class="navbar-brand sticky_logo" href="index.html">
-                        <img class="main" src="img/logo/Logo.png" srcset="img/logo/Logo@2x.png 2x" alt="logo">
-                        <img class="sticky" src="img/logo/Logo-2.png" srcset="img/logo/Logo-2@2x.png 2x" alt="logo">
+                        <img class="main" src="{{ url_for('static', filename='img/logo/Logo.png') }}" srcset="{{ url_for('static', filename='img/logo/Logo@2x.png') }} 2x" alt="logo">
+                        <img class="sticky" src="{{ url_for('static', filename='img/logo/Logo-2.png') }}" srcset="{{ url_for('static', filename='img/logo/Logo-2@2x.png') }} 2x" alt="logo">
                     </a>
                     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -188,7 +188,7 @@
 
         <!-- banner section -->
         <section class="bank-banner-area">
-            <img class="wave_img" src="img/bank/wave.png" alt="">
+            <img class="wave_img" src="{{ url_for('static', filename='img/bank/wave.png') }}" alt="">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
@@ -210,9 +210,9 @@
                             </ul>
                             <div class="active-user d-flex align-items-center wow fadeInUp" data-wow-delay="0.8s">
                                 <div class="user-img-inner">
-                                    <img src="img/bank/active-user1.jpg" alt="">
-                                    <img src="img/bank/active-user2.jpg" alt="">
-                                    <img src="img/bank/active-user3.jpg" alt="">
+                                    <img src="{{ url_for('static', filename='img/bank/active-user1.jpg') }}" alt="">
+                                    <img src="{{ url_for('static', filename='img/bank/active-user2.jpg') }}" alt="">
+                                    <img src="{{ url_for('static', filename='img/bank/active-user3.jpg') }}" alt="">
                                 </div>
                                 5K+ ⭐ Active users
                             </div>
@@ -221,21 +221,21 @@
                     <div class="col-lg-6">
                         <div class="bank-card-img">
                             <div class="bank-card wow fadeInUp" data-wow-delay="0.8s">
-                                <img data-parallax='{"x": 0, "y": 90}' src="img/bank/card-3.png" alt="">
+                                <img data-parallax='{"x": 0, "y": 90}' src="{{ url_for('static', filename='img/bank/card-3.png') }}" alt="">
                             </div>
                             <div class="bank-card wow fadeInUp" data-wow-delay="0.5s">
-                                <img data-parallax='{"x": 0, "y": 50}' src="img/bank/card-2.png" alt="">
+                                <img data-parallax='{"x": 0, "y": 50}' src="{{ url_for('static', filename='img/bank/card-2.png') }}" alt="">
                             </div>
                             <div class="bank-card wow fadeInUp" data-wow-delay="0.3s">
-                                <img src="img/bank/card-1.png" alt="">
+                                <img src="{{ url_for('static', filename='img/bank/card-1.png') }}" alt="">
                             </div>
-                            <img class="shap one" src="img/bank/line.png" alt="">
+                            <img class="shap one" src="{{ url_for('static', filename='img/bank/line.png') }}" alt="">
                             <img data-parallax='{"x": 0, "y": 50, "rotateZ": 305}' class="shap two"
-                                src="img/bank/Star-2.png" alt="">
+                                src="{{ url_for('static', filename='img/bank/Star-2.png') }}" alt="">
                             <img data-parallax='{"x": 0, "y": 0, "rotateZ": 305}' class="shap three"
-                                src="img/bank/Star-3.png" alt="">
+                                src="{{ url_for('static', filename='img/bank/Star-3.png') }}" alt="">
                             <img data-parallax='{"x":20, "y": 0, "rotateZ": 305}' class="shap four"
-                                src="img/bank/Star-4.png" alt="">
+                                src="{{ url_for('static', filename='img/bank/Star-4.png') }}" alt="">
                         </div>
                     </div>
                 </div>
@@ -250,7 +250,7 @@
                     <div class="col-lg-4 col-md-4">
                         <div class="fact-item wow fadeInUp">
                             <div class="icon">
-                                <img src="img/bank/single-icon.png" alt="">
+                                <img src="{{ url_for('static', filename='img/bank/single-icon.png') }}" alt="">
                             </div>
                             <h3>Single term fees</h3>
                             <p>Realtime problem solving is not just about time, it's about time this allows you to solve
@@ -260,7 +260,7 @@
                     <div class="col-lg-4 col-md-4">
                         <div class="fact-item wow fadeInUp" data-wow-delay="0.2s">
                             <div class="icon">
-                                <img src="img/bank/world-icon.png" alt="">
+                                <img src="{{ url_for('static', filename='img/bank/world-icon.png') }}" alt="">
                             </div>
                             <h3>Worldwide Locations</h3>
                             <p>Realtime problem solving is not just about time, it's about time this allows you to solve
@@ -270,7 +270,7 @@
                     <div class="col-lg-4 col-md-4">
                         <div class="fact-item wow fadeInUp" data-wow-delay="0.4s">
                             <div class="icon">
-                                <img src="img/bank/sheld-icon.png" alt="">
+                                <img src="{{ url_for('static', filename='img/bank/sheld-icon.png') }}" alt="">
                             </div>
                             <h3>Safe and protected</h3>
                             <p>Realtime problem solving is not just about time, it's about time this allows you to solve
@@ -366,7 +366,7 @@
                         </div>
                     </div>
                     <div class="col-lg-5">
-                        <img class="wow fadeInUp" data-wow-delay="0.4s" src="img/bank/mobile.png" alt="">
+                        <img class="wow fadeInUp" data-wow-delay="0.4s" src="{{ url_for('static', filename='img/bank/mobile.png') }}" alt="">
                     </div>
                 </div>
             </div>
@@ -423,20 +423,20 @@
                             <div class="tab-pane fade show active" id="freelancer" role="tabpanel"
                                 aria-labelledby="freelancer-tab">
                                 <div class="card-img">
-                                    <img class="card_one" src="img/bank/f-card1.png" alt="">
-                                    <img class="card_two" src="img/bank/f-card2.png" alt="">
+                                    <img class="card_one" src="{{ url_for('static', filename='img/bank/f-card1.png') }}" alt="">
+                                    <img class="card_two" src="{{ url_for('static', filename='img/bank/f-card2.png') }}" alt="">
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="startup" role="tabpanel" aria-labelledby="startup-tab">
                                 <div class="card-img">
-                                    <img class="card_one" src="img/bank/f_card3.png" alt="">
-                                    <img class="card_two" src="img/bank/f_card4.png" alt="">
+                                    <img class="card_one" src="{{ url_for('static', filename='img/bank/f_card3.png') }}" alt="">
+                                    <img class="card_two" src="{{ url_for('static', filename='img/bank/f_card4.png') }}" alt="">
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="business" role="tabpanel" aria-labelledby="business-tab">
                                 <div class="card-img">
-                                    <img class="card_one" src="img/bank/f_card5.png" alt="">
-                                    <img class="card_two" src="img/bank/f_card6.png" alt="">
+                                    <img class="card_one" src="{{ url_for('static', filename='img/bank/f_card5.png') }}" alt="">
+                                    <img class="card_two" src="{{ url_for('static', filename='img/bank/f_card6.png') }}" alt="">
                                 </div>
                             </div>
                         </div>
@@ -458,7 +458,7 @@
                     <div class="col-lg-4 col-sm-6">
                         <div class="feature-card-widget-8 saas-feature-card wow fadeInUp" data-wow-delay="0.1s">
                             <div class="card-img">
-                                <img src="img/bank/slack.png" alt="feature svg">
+                                <img src="{{ url_for('static', filename='img/bank/slack.png') }}" alt="feature svg">
                             </div>
                             <h4>Slack</h4>
                             <p>Choose your training and register for free if you are a freelancer the courses are entire
@@ -469,7 +469,7 @@
                     <div class="col-lg-4 col-sm-6">
                         <div class="feature-card-widget-8 saas-feature-card wow fadeInUp" data-wow-delay="0.3s">
                             <div class="card-img">
-                                <img src="img/bank/dropbox.png" alt="feature svg">
+                                <img src="{{ url_for('static', filename='img/bank/dropbox.png') }}" alt="feature svg">
                             </div>
                             <h4>Dropbox</h4>
                             <p>Choose your training and register for free if you are a freelancer the courses are entire
@@ -480,7 +480,7 @@
                     <div class="col-lg-4 col-sm-6">
                         <div class="feature-card-widget-8 saas-feature-card wow fadeInUp" data-wow-delay="0.6s">
                             <div class="card-img">
-                                <img src="img/bank/google_drive.png" alt="feature svg">
+                                <img src="{{ url_for('static', filename='img/bank/google_drive.png') }}" alt="feature svg">
                             </div>
                             <h4>Google Drive</h4>
                             <p>Choose your training and register for free if you are a freelancer the courses are entire
@@ -491,7 +491,7 @@
                     <div class="col-lg-4 col-sm-6">
                         <div class="feature-card-widget-8 saas-feature-card wow fadeInUp" data-wow-delay="0.1s">
                             <div class="card-img">
-                                <img src="img/bank/jira.png" alt="feature svg">
+                                <img src="{{ url_for('static', filename='img/bank/jira.png') }}" alt="feature svg">
                             </div>
                             <h4>Jira</h4>
                             <p>Choose your training and register for free if you are a freelancer the courses are entire
@@ -502,7 +502,7 @@
                     <div class="col-lg-4 col-sm-6">
                         <div class="feature-card-widget-8 saas-feature-card wow fadeInUp" data-wow-delay="0.3s">
                             <div class="card-img">
-                                <img src="img/bank/zendesk.png" alt="feature svg">
+                                <img src="{{ url_for('static', filename='img/bank/zendesk.png') }}" alt="feature svg">
                             </div>
                             <h4>Zendesk</h4>
                             <p>Choose your training and register for free if you are a freelancer the courses are entire
@@ -513,7 +513,7 @@
                     <div class="col-lg-4 col-sm-6">
                         <div class="feature-card-widget-8 saas-feature-card wow fadeInUp" data-wow-delay="0.6s">
                             <div class="card-img">
-                                <img src="img/bank/mailchimp.png" alt="feature svg">
+                                <img src="{{ url_for('static', filename='img/bank/mailchimp.png') }}" alt="feature svg">
                             </div>
                             <h4>Mailchimp</h4>
                             <p>Choose your training and register for free if you are a freelancer the courses are entire
@@ -534,17 +534,17 @@
                     <h1>Our customer base<br> reaches <span class="underline-shape">worldwide</span></h1>
                 </div>
                 <div class="map_inner">
-                    <img src="img/bank/map.png" alt="">
+                    <img src="{{ url_for('static', filename='img/bank/map.png') }}" alt="">
                     <ul class="list-unstyled map_list">
-                        <li class="active wow zoomIn" data-wow-delay="0.2s"><img src="img/bank/flag-1.png" alt="">
+                        <li class="active wow zoomIn" data-wow-delay="0.2s"><img src="{{ url_for('static', filename='img/bank/flag-1.png') }}" alt="">
                         </li>
-                        <li class="wow zoomIn" data-wow-delay="0.4s"><img src="img/bank/flag-2.png" alt=""></li>
-                        <li class="wow zoomIn" data-wow-delay="0.5s"><img src="img/bank/flag-3.png" alt=""></li>
-                        <li class="wow zoomIn" data-wow-delay="0.6s"><img src="img/bank/flag-4.png" alt=""></li>
-                        <li class="wow zoomIn" data-wow-delay="0.7s"><img src="img/bank/flag-5.png" alt=""></li>
-                        <li class="wow zoomIn" data-wow-delay="0.8s"><img src="img/bank/flag-6.png" alt=""></li>
-                        <li class="wow zoomIn" data-wow-delay="0.9s"><img src="img/bank/flag-7.png" alt=""></li>
-                        <li class="wow zoomIn" data-wow-delay="0.95s"><img src="img/bank/flag-8.png" alt=""></li>
+                        <li class="wow zoomIn" data-wow-delay="0.4s"><img src="{{ url_for('static', filename='img/bank/flag-2.png') }}" alt=""></li>
+                        <li class="wow zoomIn" data-wow-delay="0.5s"><img src="{{ url_for('static', filename='img/bank/flag-3.png') }}" alt=""></li>
+                        <li class="wow zoomIn" data-wow-delay="0.6s"><img src="{{ url_for('static', filename='img/bank/flag-4.png') }}" alt=""></li>
+                        <li class="wow zoomIn" data-wow-delay="0.7s"><img src="{{ url_for('static', filename='img/bank/flag-5.png') }}" alt=""></li>
+                        <li class="wow zoomIn" data-wow-delay="0.8s"><img src="{{ url_for('static', filename='img/bank/flag-6.png') }}" alt=""></li>
+                        <li class="wow zoomIn" data-wow-delay="0.9s"><img src="{{ url_for('static', filename='img/bank/flag-7.png') }}" alt=""></li>
+                        <li class="wow zoomIn" data-wow-delay="0.95s"><img src="{{ url_for('static', filename='img/bank/flag-8.png') }}" alt=""></li>
                     </ul>
                 </div>
             </div>
@@ -684,23 +684,23 @@
                 <div class="row gy-md-0 gy-4 align-items-center h-100">
                     <div class="col">
                         <a href="#"><img class="clients-logo img-fluid wow fadeInRight" data-wow-delay="0.1s"
-                                src="img/saas-app/c_logo_1.png" alt="logo"></a>
+                                src="{{ url_for('static', filename='img/saas-app/c_logo_1.png') }}" alt="logo"></a>
                     </div>
                     <div class="col">
                         <a href="#"><img class="clients-logo img-fluid wow fadeInRight" data-wow-delay="0.3s"
-                                src="img/saas-app/c_logo_2.png" alt="logo"></a>
+                                src="{{ url_for('static', filename='img/saas-app/c_logo_2.png') }}" alt="logo"></a>
                     </div>
                     <div class="col">
                         <a href="#"><img class="clients-logo img-fluid wow fadeInRight" data-wow-delay="0.5s"
-                                src="img/saas-app/c_logo_3.png" alt="logo"></a>
+                                src="{{ url_for('static', filename='img/saas-app/c_logo_3.png') }}" alt="logo"></a>
                     </div>
                     <div class="col">
                         <a href="#"><img class="clients-logo img-fluid wow fadeInRight" data-wow-delay="0.7s"
-                                src="img/saas-app/c_logo_4.png" alt="logo"></a>
+                                src="{{ url_for('static', filename='img/saas-app/c_logo_4.png') }}" alt="logo"></a>
                     </div>
                     <div class="col">
                         <a href="#"><img class="clients-logo img-fluid wow fadeInRight" data-wow-delay="0.7s"
-                                src="img/saas-app/c_logo_5.png" alt="logo"></a>
+                                src="{{ url_for('static', filename='img/saas-app/c_logo_5.png') }}" alt="logo"></a>
                     </div>
                 </div>
             </div>
@@ -720,7 +720,7 @@
                             </div>
                         </div>
                         <div class="col-lg-6 text-end">
-                            <img class="wow fadeInUp" data-wow-delay="0.2s" src="img/bank/mobile-two.png" alt="">
+                            <img class="wow fadeInUp" data-wow-delay="0.2s" src="{{ url_for('static', filename='img/bank/mobile-two.png') }}" alt="">
                         </div>
                     </div>
                 </div>
@@ -733,7 +733,7 @@
                     <div class="row">
                         <div class="col-lg-4 col-sm-6">
                             <div class="f-widget about-widget">
-                                <a href="index.html" class="p-0 m-0"><img src="img/logo/Logo.png" alt="logo"></a>
+                                <a href="index.html" class="p-0 m-0"><img src="{{ url_for('static', filename='img/logo/Logo.png') }}" alt="logo"></a>
                                 <p>It's difficult to find examples of lorem ipsum in use before Letrase.</p>
                             </div>
                         </div>
@@ -806,19 +806,19 @@
         <a id="back-to-top" title="Back to Top"></a>
 
         <!-- JS here -->
-        <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-        <script type="text/javascript" src="js/preloader.js"></script>
-        <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-        <script type="text/javascript" src="js/jquery.smoothscroll.min.js"></script>
-        <script type="text/javascript" src="js/jquery.parallax-scroll.js"></script>
-        <script type="text/javascript" src="js/slick.min.js"></script>
-        <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
-        <script type="text/javascript" src="js/nouislider.min.js"></script>
-        <script type="text/javascript" src="js/wNumb.js"></script>
-        <script type="text/javascript" src="js/flatpickr.min.js"></script>
-        <script type="text/javascript" src="js/wow.min.js"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.6.0.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/preloader.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.smoothscroll.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.parallax-scroll.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/slick.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.fancybox.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/nouislider.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/wNumb.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/flatpickr.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
         <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-        <script type="text/javascript" src="js/custom.js"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/custom.js') }}"></script>
 </body>
 
 </html>

@@ -6,17 +6,17 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Banca - Banking & Business Loan Bootstrap-5 HTML Template</title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}" type="image/x-icon">
 
     <!-- CSS here -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/elegant-icons.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/all.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/nice-select.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/default.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/elegant-icons.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/all.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/nice-select.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/default.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive.css') }}" media="all" />
 </head>
 
 <body>
@@ -26,7 +26,7 @@
             <div class="round_spinner">
                 <div class="spinner"></div>
                 <div class="text">
-                    <img src="img/logo/Logo-2.png" alt="">
+                    <img src="{{ url_for('static', filename='img/logo/Logo-2.png') }}" alt="">
                 </div>
             </div>
             <h2 class="head">Did You Know?</h2>
@@ -58,7 +58,7 @@
                         <div class="header-info-right">
                             <ul>
                                 <li>
-                                    <img class="img-fluid" src="img/phone-outline.png" alt="phone"><a
+                                    <img class="img-fluid" src="{{ url_for('static', filename='img/phone-outline.png') }}" alt="phone"><a
                                         href="tel:01234567890">+01234-567890</a>
                                 </li>
 
@@ -76,8 +76,8 @@
             <nav class="navbar navbar-expand-lg ">
                 <div class="container">
                     <a class="navbar-brand sticky_logo" href="index.html">
-                        <img class="main" src="img/logo/Logo.png" srcset="img/logo/Logo@2x.png 2x" alt="logo">
-                        <img class="sticky" src="img/logo/Logo-2.png" srcset="img/logo/Logo-2@2x.png 2x" alt="logo">
+                        <img class="main" src="{{ url_for('static', filename='img/logo/Logo.png') }}" srcset="{{ url_for('static', filename='img/logo/Logo@2x.png') }} 2x" alt="logo">
+                        <img class="sticky" src="{{ url_for('static', filename='img/logo/Logo-2.png') }}" srcset="{{ url_for('static', filename='img/logo/Logo-2@2x.png') }} 2x" alt="logo">
                     </a>
                     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -220,7 +220,7 @@
         <!-- BreadCrumb start -->
         <section class="breadcrumb-area">
             <div class="breadcrumb-widget  breadcrumb-widget-3 pt-200 pb-200"
-                style="background-image: url(img/breadcrumb/bg-4.jpg);">
+                style="background-image: url('{{ url_for('static', filename='\1') }}');">
 
                 <div class="container">
                     <div class="row">
@@ -253,7 +253,7 @@
                                 <div class="get-touch-box">
                                     <div class="icon">
 
-                                        <img src="img/contact/call-outline.png" alt="call icon">
+                                        <img src="{{ url_for('static', filename='img/contact/call-outline.png') }}" alt="call icon">
                                     </div>
                                     <div>
                                         <p>Call the helpline:</p>
@@ -265,7 +265,7 @@
                                 <div class="get-touch-box">
                                     <div class="icon">
 
-                                        <img src="img/contact/mail-open-outline.png" alt="mail icon">
+                                        <img src="{{ url_for('static', filename='img/contact/mail-open-outline.png') }}" alt="mail icon">
                                     </div>
                                     <div>
                                         <p>Email us:</p>
@@ -359,7 +359,7 @@
                 <div class="row mt-60 gy-lg-0 gy-4">
                     <div class="col-lg-4">
                         <div class="feature-card-widget-4 wow fadeInUp" data-wow-delay="0.1s">
-                            <img src="img/contact/help-icon-1.svg" alt="icon">
+                            <img src="{{ url_for('static', filename='img/contact/help-icon-1.svg') }}" alt="icon">
                             <h5 class="mt-4 mb-10">Articles & Guides</h5>
                             <p>100+ articles to get the information you need when you need it.</p>
                             <a href="#" class="theme-btn theme-btn-outlined mt-30">Visit Knowledge Base</a>
@@ -367,7 +367,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="feature-card-widget-4 wow fadeInUp" data-wow-delay="0.3s">
-                            <img src="img/contact/help-icon-2.svg" alt="icon">
+                            <img src="{{ url_for('static', filename='img/contact/help-icon-2.svg') }}" alt="icon">
                             <h5 class="mt-4 mb-10">Technical Support</h5>
                             <p>If you ever need help, you can chat directly with our support team!</p>
                             <a href="#" class="theme-btn theme-btn-outlined mt-30">Chat With Support</a>
@@ -375,7 +375,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="feature-card-widget-4 wow fadeInUp" data-wow-delay="0.5s">
-                            <img src="img/contact/help-icon-3.svg" alt="icon">
+                            <img src="{{ url_for('static', filename='img/contact/help-icon-3.svg') }}" alt="icon">
                             <h5 class="mt-4 mb-10">Social Media Support</h5>
                             <p>Doing customer support on social media requires a dedicated strategy. </p>
                             <div class="social-button mt-35 mb-10">
@@ -545,7 +545,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 position-relative">
-                        <div class="cta cta-bg-violet" style="background-image: url(img/cta/wave.png);">
+                        <div class="cta cta-bg-violet" style="background-image: url('{{ url_for('static', filename='\1') }}');">
 
 
                             <div class="row align-items-center">
@@ -651,7 +651,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-3 text-center text-lg-start">
-                        <a href="index.html" class="p-0 m-0"><img src="img/logo/Logo.png" alt="logo"></a>
+                        <a href="index.html" class="p-0 m-0"><img src="{{ url_for('static', filename='img/logo/Logo.png') }}" alt="logo"></a>
                     </div>
                     <div class="col-lg-5 text-center my-3 my-sm-0">
                         <div class="copyright-text">
@@ -680,16 +680,16 @@
     <a id="back-to-top" title="Back to Top"></a>
 
     <!-- JS here -->
-    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="js/preloader.js"></script>
-    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="js/jquery.smoothscroll.min.js"></script>
-    <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
-    <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
-    <script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
-    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.6.0.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/preloader.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.smoothscroll.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.waypoints.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.nice-select.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/custom.js') }}"></script>
 </body>
 
 </html>

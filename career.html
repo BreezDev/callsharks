@@ -6,17 +6,17 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Banca - Banking & Business Loan Bootstrap-5 HTML Template</title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}" type="image/x-icon">
 
     <!-- CSS here -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/elegant-icons.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/all.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/nice-select.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/default.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/elegant-icons.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/all.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/nice-select.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/default.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive.css') }}" media="all" />
 </head>
 
 <body>
@@ -26,7 +26,7 @@
             <div class="round_spinner">
                 <div class="spinner"></div>
                 <div class="text">
-                    <img src="img/logo/Logo-2.png" alt="">
+                    <img src="{{ url_for('static', filename='img/logo/Logo-2.png') }}" alt="">
                 </div>
             </div>
             <h2 class="head">Did You Know?</h2>
@@ -58,7 +58,7 @@
                         <div class="header-info-right">
                             <ul>
                                 <li>
-                                    <img class="img-fluid" src="img/phone-outline.png" alt="phone"><a
+                                    <img class="img-fluid" src="{{ url_for('static', filename='img/phone-outline.png') }}" alt="phone"><a
                                         href="tel:01234567890">+01234-567890</a>
                                 </li>
 
@@ -76,8 +76,8 @@
             <nav class="navbar navbar-expand-lg ">
                 <div class="container">
                     <a class="navbar-brand sticky_logo" href="index.html">
-                        <img class="main" src="img/logo/Logo.png" srcset="img/logo/Logo@2x.png 2x" alt="logo">
-                        <img class="sticky" src="img/logo/Logo-2.png" srcset="img/logo/Logo-2@2x.png 2x" alt="logo">
+                        <img class="main" src="{{ url_for('static', filename='img/logo/Logo.png') }}" srcset="{{ url_for('static', filename='img/logo/Logo@2x.png') }} 2x" alt="logo">
+                        <img class="sticky" src="{{ url_for('static', filename='img/logo/Logo-2.png') }}" srcset="{{ url_for('static', filename='img/logo/Logo-2@2x.png') }} 2x" alt="logo">
                     </a>
                     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -218,7 +218,7 @@
     <main>
         <!-- job feature start -->
         <section class="breadcrumb-area">
-            <div class="breadcrumb-widget  pt-145 pb-200" style="background-image: url(img/breadcrumb/bg-2.png);">
+            <div class="breadcrumb-widget  pt-145 pb-200" style="background-image: url('{{ url_for('static', filename='\1') }}');">
                 <div class="container">
                     <div class="row pb-100 pb-sm-0">
                         <div class="col-md-12">
@@ -470,28 +470,28 @@
                 <div class="row pt-60 pb-100 gy-4 gy-lg-0">
                     <div class="col-md-6 col-lg-3">
                         <div class="feature-card-widget-2 wow fadeInUp text-start py-5" data-wow-delay="0.1s">
-                            <img class="img-fluid" src="img/recruitment-proccess/icon-1.svg" alt="icon svg">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/recruitment-proccess/icon-1.svg') }}" alt="icon svg">
                             <h4>CV Submission</h4>
                             <p>Submit your CV or resume through our online portal if you meet our requirements.</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <div class="feature-card-widget-2 wow fadeInUp text-start py-5" data-wow-delay="0.3s">
-                            <img class="img-fluid" src="img/recruitment-proccess/icon-2.svg" alt="icon svg">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/recruitment-proccess/icon-2.svg') }}" alt="icon svg">
                             <h4>Phone Screening</h4>
                             <p>After looking at your CV you will be inviled for a telephone interview at a time.</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <div class="feature-card-widget-2 wow fadeInUp text-start py-5" data-wow-delay="0.5s">
-                            <img class="img-fluid" src="img/recruitment-proccess/icon-3.svg" alt="icon svg">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/recruitment-proccess/icon-3.svg') }}" alt="icon svg">
                             <h4>Skill Assessment</h4>
                             <p>You will be invited at our head office to take a skills and knowledge assessment.</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <div class="feature-card-widget-2 wow fadeInUp text-start py-5" data-wow-delay="0.7s">
-                            <img class="img-fluid" src="img/recruitment-proccess/icon-4.svg" alt="icon svg">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/recruitment-proccess/icon-4.svg') }}" alt="icon svg">
                             <h4>Final Interview</h4>
                             <p>If you can pass all stages we will invite you for a final interview with our CEO.</p>
                         </div>
@@ -600,7 +600,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-3 text-center text-lg-start">
-                        <a href="index.html" class="p-0 m-0"><img src="img/logo/Logo.png" alt="logo"></a>
+                        <a href="index.html" class="p-0 m-0"><img src="{{ url_for('static', filename='img/logo/Logo.png') }}" alt="logo"></a>
                     </div>
                     <div class="col-lg-5 text-center my-3 my-sm-0">
                         <div class="copyright-text">
@@ -629,16 +629,16 @@
     <a id="back-to-top" title="Back to Top"></a>
 
     <!-- JS here -->
-    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="js/preloader.js"></script>
-    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="js/jquery.smoothscroll.min.js"></script>
-    <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
-    <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
-    <script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
-    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.6.0.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/preloader.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.smoothscroll.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.waypoints.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.nice-select.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/custom.js') }}"></script>
 </body>
 
 </html>

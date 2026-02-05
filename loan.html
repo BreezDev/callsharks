@@ -6,22 +6,22 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Banca - Banking & Business Loan Bootstrap-5 HTML Template</title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}" type="image/x-icon">
 
     <!-- CSS here -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/elegant-icons.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/all.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/nice-select.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/slick.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/jquery-editable-select.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/nouislider.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/default.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/elegant-icons.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/all.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/nice-select.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/slick.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/slick-theme.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/jquery-editable-select.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/jquery.fancybox.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/nouislider.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/default.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive.css') }}" media="all" />
 </head>
 
 <body>
@@ -31,7 +31,7 @@
             <div class="round_spinner">
                 <div class="spinner"></div>
                 <div class="text">
-                    <img src="img/logo/Logo-2.png" alt="">
+                    <img src="{{ url_for('static', filename='img/logo/Logo-2.png') }}" alt="">
                 </div>
             </div>
             <h2 class="head">Did You Know?</h2>
@@ -64,7 +64,7 @@
                         <div class="header-info-right">
                             <ul>
                                 <li>
-                                    <img class="img-fluid" src="img/phone-outline.png" alt="phone"><a
+                                    <img class="img-fluid" src="{{ url_for('static', filename='img/phone-outline.png') }}" alt="phone"><a
                                         href="tel:01234567890">+01234-567890</a>
                                 </li>
 
@@ -82,8 +82,8 @@
             <nav class="navbar navbar-expand-lg ">
                 <div class="container">
                     <a class="navbar-brand sticky_logo" href="index.html">
-                        <img class="main" src="img/logo/Logo.png" srcset="img/logo/Logo@2x.png 2x" alt="logo">
-                        <img class="sticky" src="img/logo/Logo-2.png" srcset="img/logo/Logo-2@2x.png 2x" alt="logo">
+                        <img class="main" src="{{ url_for('static', filename='img/logo/Logo.png') }}" srcset="{{ url_for('static', filename='img/logo/Logo@2x.png') }} 2x" alt="logo">
+                        <img class="sticky" src="{{ url_for('static', filename='img/logo/Logo-2.png') }}" srcset="{{ url_for('static', filename='img/logo/Logo-2@2x.png') }} 2x" alt="logo">
                     </a>
                     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -221,7 +221,7 @@
 
     <main>
         <!-- Banner start -->
-        <section class="banner-area-2 loan-banner pt-145" style="background-image: url(img/banner/loan-banner.png)">
+        <section class="banner-area-2 loan-banner pt-145" style="background-image: url('{{ url_for('static', filename='\1') }}')">
             <div class="container">
                 <div class="row align-items-center  pt-165 pb-200">
                     <div class="col-lg-7 mx-auto">
@@ -243,7 +243,7 @@
                             <div class="row gy-4 gy-lg-0 gx-5">
                                 <div class="col-lg-4 border-end">
                                     <div class="steps-widget pr-30 pl-30 wow fadeInUp" data-wow-delay="0.1s">
-                                        <img src="img/steps/icon-1.png" alt="icon">
+                                        <img src="{{ url_for('static', filename='img/steps/icon-1.png') }}" alt="icon">
                                         <h4><a href="#">Check Eligibility</a></h4>
                                         <p>Select your loan amount, answer a few questions and get instant loan amount
                                         </p>
@@ -251,7 +251,7 @@
                                 </div>
                                 <div class="col-lg-4  border-end">
                                     <div class="steps-widget pr-30 pl-30 wow fadeInUp" data-wow-delay="0.3s">
-                                        <img src="img/steps/icon-2.png" alt="icon">
+                                        <img src="{{ url_for('static', filename='img/steps/icon-2.png') }}" alt="icon">
                                         <h4><a href="#">Submit Documents</a></h4>
                                         <p>Share required documents with our representative hassle-free
                                         </p>
@@ -259,7 +259,7 @@
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="steps-widget pr-30 pl-30 wow fadeInUp" data-wow-delay="0.5s">
-                                        <img src="img/steps/icon-3.png" alt="icon">
+                                        <img src="{{ url_for('static', filename='img/steps/icon-3.png') }}" alt="icon">
                                         <h4><a href="#">Approval in Principle</a></h4>
                                         <p>Choose the final sanctioned loan offer with the terms that work best for you
                                         </p>
@@ -290,8 +290,8 @@
                                 <div class="col-lg-4">
                                     <div class="loan-apply-widget wow fadeInRight" data-wow-delay="0.1s">
                                         <div class="icon">
-                                            <img src="img/apply-loan/icon-1.1.png" alt="icon-1">
-                                            <img src="img/apply-loan/icon-1.2.png" alt="icon-1.2">
+                                            <img src="{{ url_for('static', filename='img/apply-loan/icon-1.1.png') }}" alt="icon-1">
+                                            <img src="{{ url_for('static', filename='img/apply-loan/icon-1.2.png') }}" alt="icon-1.2">
                                         </div>
                                         <div class="apply-content">
                                             <span class="title">How much do you need?</span>
@@ -302,8 +302,8 @@
                                 <div class="col-lg-4">
                                     <div class="loan-apply-widget wow fadeInRight" data-wow-delay="0.3s">
                                         <div class="icon">
-                                            <img src="img/apply-loan/icon-2.1.png" alt="icon-2">
-                                            <img src="img/apply-loan/icon-2.2.png" alt="icon-2.2">
+                                            <img src="{{ url_for('static', filename='img/apply-loan/icon-2.1.png') }}" alt="icon-2">
+                                            <img src="{{ url_for('static', filename='img/apply-loan/icon-2.2.png') }}" alt="icon-2.2">
                                         </div>
                                         <div class="apply-content">
                                             <span class="title">Type of Loan</span>
@@ -320,8 +320,8 @@
                                 <div class="col-lg-4">
                                     <div class="loan-apply-widget wow fadeInRight" data-wow-delay="0.5s">
                                         <div class="icon">
-                                            <img src="img/apply-loan/icon-3.1.png" alt="icon-3">
-                                            <img src="img/apply-loan/icon-3.2.png" alt="icon-3.2">
+                                            <img src="{{ url_for('static', filename='img/apply-loan/icon-3.1.png') }}" alt="icon-3">
+                                            <img src="{{ url_for('static', filename='img/apply-loan/icon-3.2.png') }}" alt="icon-3.2">
                                         </div>
                                         <div class="apply-content">
                                             <span class="title">Where do you currently live?</span>
@@ -416,7 +416,7 @@
 
                                 <div class="col-12 mt-15 d-flex wow fadeInLeft">
                                     <div class="icon">
-                                        <img class="img=fluid" src="img/steps/sheild.png" alt="sheild">
+                                        <img class="img=fluid" src="{{ url_for('static', filename='img/steps/sheild.png') }}" alt="sheild">
                                     </div>
                                     <p class="security-info d-inline-block ms-2">
                                         Your information is 100% secure. We do not share your info with other
@@ -561,7 +561,7 @@
                             <div class="row">
                                 <div class="col-4">
                                     <div class="author-img">
-                                        <img src="img/testimonial/img-2.png" alt="image">
+                                        <img src="{{ url_for('static', filename='img/testimonial/img-2.png') }}" alt="image">
                                     </div>
                                 </div>
                                 <div class="col-8 d-flex align-items-center">
@@ -594,7 +594,7 @@
                             <div class="row">
                                 <div class="col-4">
                                     <div class="author-img">
-                                        <img src="img/testimonial/img-1.png" alt="image">
+                                        <img src="{{ url_for('static', filename='img/testimonial/img-1.png') }}" alt="image">
                                     </div>
                                 </div>
                                 <div class="col-8 d-flex align-items-center">
@@ -627,7 +627,7 @@
                             <div class="row">
                                 <div class="col-4">
                                     <div class="author-img">
-                                        <img src="img/testimonial/img-2.png" alt="image">
+                                        <img src="{{ url_for('static', filename='img/testimonial/img-2.png') }}" alt="image">
                                     </div>
                                 </div>
                                 <div class="col-8 d-flex align-items-center">
@@ -660,7 +660,7 @@
                             <div class="row">
                                 <div class="col-4">
                                     <div class="author-img">
-                                        <img src="img/testimonial/img-1.png" alt="image">
+                                        <img src="{{ url_for('static', filename='img/testimonial/img-1.png') }}" alt="image">
                                     </div>
                                 </div>
                                 <div class="col-8 d-flex align-items-center">
@@ -774,7 +774,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-3 text-center text-lg-start">
-                        <a href="index.html" class="p-0 m-0"><img src="img/logo/Logo.png" alt="logo"></a>
+                        <a href="index.html" class="p-0 m-0"><img src="{{ url_for('static', filename='img/logo/Logo.png') }}" alt="logo"></a>
                     </div>
                     <div class="col-lg-5 text-center my-3 my-sm-0">
                         <div class="copyright-text">
@@ -804,21 +804,21 @@
 
 
     <!-- JS here -->
-    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="js/preloader.js"></script>
-    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="js/jquery.smoothscroll.min.js"></script>
-    <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
-    <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
-    <script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
-    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script type="text/javascript" src="js/nouislider.min.js"></script>
-    <script type="text/javascript" src="js/wNumb.js"></script>
-    <script type="text/javascript" src="js/jquery-editable-select.js"></script>
-    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.6.0.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/preloader.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.smoothscroll.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.waypoints.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.nice-select.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.fancybox.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/slick.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/nouislider.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/wNumb.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-editable-select.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/custom.js') }}"></script>
 </body>
 
 </html>
