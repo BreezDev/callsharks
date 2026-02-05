@@ -1,0 +1,337 @@
+body {
+  &.body_dark {
+    //--brand_color: #3185ec !important;
+    --brand_color: #3185ec !important;
+    --secondary_color: #ffffff !important;
+    --body-color: #f1f1f1 !important;
+    --p_color: #c3c3c3 !important;
+
+    --black_900: #f1f1f1 !important;
+    --black_850: #ededed !important;
+    --black_800: #e9e9e9 !important;
+    --black_750: #e5e5e5 !important;
+    --black_700: #e1e1e1 !important;
+    --black_600: #bebebe !important;
+    --black_500: #b9b9b9 !important;
+    --black_400: #a2a2a2 !important;
+    --black_150: rgba(255, 255, 255, 0.3) !important;
+    --black_50: #494949 !important;
+    --black_25: #383838 !important;
+
+    --border_on_white: #2c303a !important;
+    --border_on_gray: #6a737c !important;
+    --border-on-highlight: #393e4b !important;
+
+    --font-color-gray: #f1f1f1 !important;
+
+    --bs-white: #2c303a !important; //
+    --bg-color-gray: #e2e6e763 !important;
+    --sec-bg-color: #131417 !important; //#18191a Facebook Body Color
+
+    color: #c3c3c3 !important;
+
+    background: var(--sec-bg-color);
+
+    //Section Color
+    .bg-white,
+    .bg_white,
+    .bg_disable,
+    .cta-3,
+    .cta-area-2,
+    .client-area-2,
+    .banner-area-6,
+    .feature-area-3,
+    .how-it-work .single-widget.consultation .widget-content li.active .number,
+    .get-touch-area-2 .touch-form .form-control,
+    .banner-area,
+    .help-cta,
+    .manage-c-finance,
+    .app-showcase-area,
+    .bank-fact-area,
+    .banner-area-3,
+    .banner-saas-area {
+      background: var(--sec-bg-color) !important;
+    }
+
+    .banner-area-2,
+    .loan-slider .single-slide,
+    .loan-slider .slick-arrow {
+      background-image: linear-gradient(
+        180deg,
+        #131417 0%,
+        #131417 100%
+      ) !important;
+    }
+
+    //Item Box Color
+    .feature-job-description,
+    .feature-card-widget-8,
+    .fast-e-loan .learn-more ul li,
+    .loan-details-widget .dob .nice-select,
+    .calculator-widget-2 .calculator-result-widget,
+    .pricing_inner .price_item,
+    .loan-details-widget .dropzone {
+      background: var(--bs-white);
+    }
+
+    .pricing_inner .price_item:hover {
+      background: var(--brand_color);
+    }
+
+    .banner-saas-area .shape_img,
+    .app-showcase-area .shape_img {
+      opacity: 0.3;
+    }
+    .saas-clients-logo .clients-logo {
+      opacity: 1;
+    }
+
+    .saas-feature-card .text-btn {
+      color: var(--secondary_color);
+    }
+
+    .process-area .saas-feature-card p,
+    .saas-section-title p,
+    .saas-feature-card p {
+      color: var(--p_color) !important;
+    }
+
+    .single-sidebar-widget .widget-title {
+      background-color: #6a737c;
+    }
+
+    .loan-details-widget .form-control,
+    .loan-details-widget .nice-select {
+      border-color: var(--black_50);
+    }
+
+    .loan-details-widget .form-control {
+      background: #2c303a;
+    }
+
+    .services-area table tbody {
+      tr {
+        &:nth-child(odd) {
+          > *:nth-child(odd) {
+            background: #2c303a;
+          }
+          > *:nth-child(even) {
+            background: #2c303a;
+          }
+        }
+        &:nth-child(even) {
+          > *:nth-child(odd) {
+            background: #252935;
+          }
+          > *:nth-child(even) {
+            background: #252935;
+          }
+        }
+      }
+    }
+
+    //Menu Color options
+    .header-menu.header-menu-2 .menu > .nav-item > .nav-link {
+      color: #ffffff;
+    }
+
+    .banner-area-6 .banner-content .feature-list i {
+      color: #b8b9bc;
+    }
+    .feature-card-widget-9 img {
+      filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(310deg)
+        brightness(105%) contrast(101%);
+    }
+    .about-area-2 .feature-list li {
+      color: #b8b9bc;
+    }
+    .calculator-widget-2
+      .single-calculator-widget
+      .loan-type-select
+      button:not(.active) {
+      color: var(--black_600);
+    }
+    .calculator-widget-2 .single-calculator-widget .range-label,
+    .calculator-widget-2 .loan-calculation li .label,
+    .calculator-widget-2 .pie-wrapper .label,
+    .client-area .client-slider .single-client .quote::after {
+      color: var(--black_500);
+    }
+    .calculator-widget-2 .loan-start-date input.active::placeholder,
+    .calculator-widget-2 .loan-start-date input:hover,
+    .calculator-widget-2 .loan-start-date input:hover::placeholder {
+      color: #fff;
+    }
+    .calculator-widget-2 .graph-indicator {
+      color: var(--black_400);
+    }
+    .get-touch-area-2 .touch-form .form-control:focus {
+      color: #a8a8b2;
+    }
+    .theme-btn-2:hover::before {
+      background-color: #2d2d2d;
+    }
+    .feature-calculator .calculator .steps {
+      background-color: #242424;
+    }
+    .feature-calculator .calculator .steps .single-step {
+      color: var(--black_100);
+    }
+    .feature-calculator .calculator .calculator-slider .range-input {
+      background-color: transparent;
+      color: var(--black_700);
+    }
+    .banca-corporate .single-brand img {
+      filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(310deg)
+        brightness(105%) contrast(101%);
+    }
+    .pricing_tab_btn.active span,
+    .pricing_tab_btn .toggle.clicked ~ span {
+      color: #fff;
+    }
+    .pricing_tab_btn.active .toggle + span {
+      color: #878ba9;
+    }
+    .pricing_tab_btn span {
+      color: #878ba9;
+    }
+    .saas-footer-bottom p a {
+      color: var(--black_700);
+    }
+    .loan-apply-widget .apply-content .title {
+      color: var(--black_500);
+    }
+    .loan-apply-widget .select-location .es-list {
+      background-color: var(--bs-white);
+      li {
+        color: var(--black_600);
+        &.selected {
+          color: #000;
+        }
+      }
+    }
+    .stepper-widget ul::after {
+      border-color: var(--black_500);
+    }
+    .stepper-widget ul li:not(.active) a .number {
+      background-color: var(--black_500);
+      border-color: var(--black_500);
+    }
+    .stepper-widget ul li a .number span {
+      color: #fff;
+    }
+    .loan-details-widget .nice-select {
+      background-color: transparent;
+    }
+    .loan-details-widget .form-check-input {
+      background-color: #2c303a;
+      border-color: var(--black_400);
+    }
+
+    .nice-select {
+      background-color: var(--bs-white);
+      border-color: var(--black_50);
+      .list {
+        background-color: var(--bs-white);
+        border: 1px solid var(--black_50);
+        li {
+          &:focus,
+          &:hover,
+          &.selected {
+            background-color: var(--sec-bg-color);
+          }
+        }
+      }
+    }
+    .es-list {
+      background-color: var(--bs-white);
+      border: 1px solid var(--black_50);
+      li {
+        &:focus,
+        &:hover,
+        &.selected {
+          background-color: var(--sec-bg-color);
+        }
+      }
+    }
+
+    .credit-card-box-widget img,
+    .cta-3 .img-shapes img {
+      filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(310deg)
+        brightness(105%) contrast(101%);
+    }
+    .cta-3 .form-control {
+      border-color: var(--black_50);
+    }
+    .accolades-widget .accolades-header h2 {
+      color: #fff;
+    }
+
+    .banner-area-5 .basic-loan-calculator .form-control,
+    .banner-area-5 .basic-loan-calculator .nice-select {
+      background-color: var(--bs-white);
+      border: 1px solid var(--black_50);
+    }
+    body.body_dark .banner-area-5 .basic-loan-calculator .form-control {
+      color: var(--p_color);
+    }
+
+    @media (max-width: 991px) {
+      .navbar-collapse {
+        background: var(--bs-white);
+      }
+      .header-menu .menu > .nav-item,
+      .navbar_fixed.menu_one .menu > .nav-item {
+        border-bottom: 1px solid rgba(237, 237, 237, 0.1);
+      }
+      .header-menu .menu .nav-item .mobile_dropdown_icon {
+        color: var(--p_color);
+      }
+      .header-menu .menu > .nav-item > .nav-link {
+        color: var(--p_color);
+      }
+    }
+  }
+}
+
+//==================== Dark mode Button===================//
+.js-darkmode-btn {
+  position: relative;
+  background: #1d2746;
+  color: gold;
+  border-radius: 50px;
+  padding: 0 5px;
+  margin-left: 15px;
+  height: 26px;
+}
+.js-darkmode-btn label {
+  margin: 0;
+  cursor: pointer;
+  &:hover {
+    color: gold;
+  }
+}
+.js-darkmode-btn .ball {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  background-color: #fafafa;
+  border-radius: 50%;
+  left: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: default;
+  transition: all 0.3s linear 0s;
+}
+.js-darkmode-btn ion-icon {
+  color: gold;
+  font-size: 14px;
+}
+.js-darkmode-btn input {
+  display: none;
+}
+.js-darkmode-btn ion-icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}

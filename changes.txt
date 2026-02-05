@@ -1,0 +1,13 @@
+----- v3.0.0 (04 August, 2023) -----
+New: Finance Saas App
+New: Small Bank
+New: Dark Mode Features in all demos and pages.
+
+
+----- v2.0.0 (28 January, 2023) -----
+New: Smart Finance Demo
+New: Loan Company Demo
+
+
+----- v1.0.0 (05 July, 2021) -----
+Initial release
