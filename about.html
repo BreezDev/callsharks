@@ -6,19 +6,19 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Banca - Banking & Business Loan Bootstrap-5 HTML Template</title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}" type="image/x-icon">
 
     <!-- CSS here -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/elegant-icons.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/all.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/nice-select.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/slick.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/default.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/elegant-icons.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/all.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/nice-select.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/slick.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/slick-theme.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/default.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive.css') }}" media="all" />
 </head>
 
 <body>
@@ -28,7 +28,7 @@
             <div class="round_spinner">
                 <div class="spinner"></div>
                 <div class="text">
-                    <img src="img/logo/Logo-2.png" alt="">
+                    <img src="{{ url_for('static', filename='img/logo/Logo-2.png') }}" alt="">
                 </div>
             </div>
             <h2 class="head">Did You Know?</h2>
@@ -60,7 +60,7 @@
                         <div class="header-info-right">
                             <ul>
                                 <li>
-                                    <img class="img-fluid" src="img/phone-outline-white.png" alt="phone"><a
+                                    <img class="img-fluid" src="{{ url_for('static', filename='img/phone-outline-white.png') }}" alt="phone"><a
                                         href="tel:01234567890">+01234-567890</a>
                                 </li>
 
@@ -78,7 +78,7 @@
             <nav class="navbar navbar-expand-lg ">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
-                        <img src="img/logo/Logo-2.png" srcset="img/logo/Logo-2@2x.png 2x" alt="logo">
+                        <img src="{{ url_for('static', filename='img/logo/Logo-2.png') }}" srcset="{{ url_for('static', filename='img/logo/Logo-2@2x.png') }} 2x" alt="logo">
                     </a>
                     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -218,7 +218,7 @@
 
     <main>
         <!-- Banner start -->
-        <section class="banner-area-2 pt-145" style="background-image: url(img/banner/about-bg.png);">
+        <section class="banner-area-2 pt-145" style="background-image: url('{{ url_for('static', filename='\1') }}');">
             <div class="container">
                 <div class="row align-items-center pt-130 pb-140">
                     <div class="col-xl-6 col-lg-8">
@@ -294,7 +294,7 @@
                                     </div>
                                 </div>
                                 <div class="col-5">
-                                    <img class="img-fluid" src="img/statistics/img-1.png" alt="img">
+                                    <img class="img-fluid" src="{{ url_for('static', filename='img/statistics/img-1.png') }}" alt="img">
                                 </div>
 
                             </div>
@@ -341,7 +341,7 @@
                     <div class="col-lg-5 ">
                         <div class="statistics-widget-2 wow fadeInRight" data-wow-delay="0.7s">
                             <div class="widget-content widget-6"
-                                style="background-image: url(img/statistics/img-2.png)">
+                                style="background-image: url('{{ url_for('static', filename='\1') }}')">
                                 <h2>Best Consumer Digital Bank</h2>
                                 <p>Global Finance 2020</p>
                             </div>
@@ -352,7 +352,7 @@
                     <div class="col-md-5">
                         <div class="statistics-widget-2 wow fadeInLeft" data-wow-delay="0.1s">
                             <div class="widget-content widget-7"
-                                style="background-image: url(img/statistics/img-3.png);">
+                                style="background-image: url('{{ url_for('static', filename='\1') }}');">
                                 <h1 class="stat-counter">35</h1>
                                 <p>Global Finance 2020</p>
                             </div>
@@ -362,12 +362,12 @@
                         <div class="statistics-widget-2 wow fadeInLeft" data-wow-delay="0.3s">
                             <div class="row gx-0">
                                 <div class="col-5">
-                                    <img class="img-fluid" src="img/statistics/img-6.png" alt="img">
+                                    <img class="img-fluid" src="{{ url_for('static', filename='img/statistics/img-6.png') }}" alt="img">
 
                                 </div>
                                 <div class="col-7">
                                     <div class="widget-content widget-8"
-                                        style="background-image: url(img/statistics/img-4.png);">
+                                        style="background-image: url('{{ url_for('static', filename='\1') }}');">
                                         <h1 class="stat-counter">2</h1>
                                         <p>We’re listed on two of Asia’s largest stock exchanges</p>
                                     </div>
@@ -475,7 +475,7 @@
                             <div class="accolades-widget wow fadeInUp" data-wow-delay="0.5s">
                                 <div class="accolades-header d-flex justify-content-between align-items-end">
                                     <h2>Awards</h2>
-                                    <img src="img/recognition/icon.svg" alt="icon">
+                                    <img src="{{ url_for('static', filename='img/recognition/icon.svg') }}" alt="icon">
                                 </div>
                                 <div class="accolades-content">
                                     <ul>
@@ -529,7 +529,7 @@
                     <div class="col-lg-4">
                         <div class="single-leadership-widget wow fadeInUp " data-wow-delay="0.1s">
                             <a href="#">
-                                <img src="img/leadership/img-1.png" alt="leader-1">
+                                <img src="{{ url_for('static', filename='img/leadership/img-1.png') }}" alt="leader-1">
                                 <div class="leader-info">
                                     <h5>Eldridge Robles</h5>
                                     <p>Co-Founder, Conis</p>
@@ -541,7 +541,7 @@
                     <div class="col-lg-4">
                         <div class="single-leadership-widget wow fadeInUp " data-wow-delay="0.3s">
                             <a href="#">
-                                <img src="img/leadership/img-2.png" alt="leader-2">
+                                <img src="{{ url_for('static', filename='img/leadership/img-2.png') }}" alt="leader-2">
                                 <div class="leader-info">
                                     <h5>Eldridge Robles</h5>
                                     <p>Co-Founder, Conis</p>
@@ -552,7 +552,7 @@
                     <div class="col-lg-4">
                         <div class="single-leadership-widget wow fadeInUp " data-wow-delay="0.5s">
                             <a href="#">
-                                <img src="img/leadership/img-3.png" alt="leader-3">
+                                <img src="{{ url_for('static', filename='img/leadership/img-3.png') }}" alt="leader-3">
                                 <div class="leader-info">
                                     <h5>Eldridge Robles</h5>
                                     <p>Co-Founder, Conis</p>
@@ -666,7 +666,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-3 text-center text-lg-start">
-                        <a href="index.html" class="p-0 m-0"><img src="img/logo/Logo.png" alt="logo"></a>
+                        <a href="index.html" class="p-0 m-0"><img src="{{ url_for('static', filename='img/logo/Logo.png') }}" alt="logo"></a>
                     </div>
                     <div class="col-lg-5 text-center my-3 my-sm-0">
                         <div class="copyright-text">
@@ -695,17 +695,17 @@
     <a id="back-to-top" title="Back to Top"></a>
 
     <!-- JS here -->
-    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="js/preloader.js"></script>
-    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="js/jquery.smoothscroll.min.js"></script>
-    <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
-    <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
-    <script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.6.0.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/preloader.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.smoothscroll.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.waypoints.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.nice-select.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/slick.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/custom.js') }}"></script>
 </body>
 
 </html>

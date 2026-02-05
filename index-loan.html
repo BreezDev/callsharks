@@ -6,17 +6,17 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Banca - Banking & Business Loan Bootstrap-5 HTML Template</title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}" type="image/x-icon">
 
     <!-- CSS here -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/elegant-icons.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/all.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/nice-select.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/default.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/elegant-icons.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/all.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/nice-select.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/default.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive.css') }}" media="all" />
 </head>
 
 <body>
@@ -26,7 +26,7 @@
             <div class="round_spinner">
                 <div class="spinner"></div>
                 <div class="text">
-                    <img src="img/logo/Logo-2.png" alt="">
+                    <img src="{{ url_for('static', filename='img/logo/Logo-2.png') }}" alt="">
                 </div>
             </div>
             <h2 class="head">Did You Know?</h2>
@@ -58,7 +58,7 @@
                         <div class="header-info-right">
                             <ul>
                                 <li>
-                                    <img class="img-fluid" src="img/phone-outline-white.png" alt="phone"><a
+                                    <img class="img-fluid" src="{{ url_for('static', filename='img/phone-outline-white.png') }}" alt="phone"><a
                                         href="tel:01234567890">+01234-567890</a>
                                 </li>
 
@@ -76,7 +76,7 @@
             <nav class="navbar navbar-expand-lg ">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
-                        <img src="img/logo/Logo-2.png" srcset="img/logo/Logo-2@2x.png 2x" alt="logo">
+                        <img src="{{ url_for('static', filename='img/logo/Logo-2.png') }}" srcset="{{ url_for('static', filename='img/logo/Logo-2@2x.png') }} 2x" alt="logo">
                     </a>
                     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -220,7 +220,7 @@
                     <div class="col-md-6">
                         <div class="banner-content">
                             <img data-parallax='{"x": 0, "y": 250, "rotateZ":0}' class="shape"
-                                src="img/banner/shape-3.png" alt="shape">
+                                src="{{ url_for('static', filename='img/banner/shape-3.png') }}" alt="shape">
                             <h1 class="wow fadeInUp mb-0">Flexible home loans for the international lifestyle.</h1>
                             <p class="wow fadeInUp mt-50" data-wow-delay="0.3s">Banca is the one you can rely that will
                                 support you all the way by offering Home Loan
@@ -233,19 +233,19 @@
                     </div>
                     <div class=" col-md-6 col-lg-5 offset-lg-1 pt-40">
                         <div class="banner-img">
-                            <img class="main-img img-fluid wow fadeInRight" src="img/banner/banner-img-2.png"
+                            <img class="main-img img-fluid wow fadeInRight" src="{{ url_for('static', filename='img/banner/banner-img-2.png') }}"
                                 alt="banner-img">
                             <div class="shapes">
                                 <img data-parallax='{"x": 0, "y": 130, "rotateZ":0}' class="shape-1"
-                                    src="img/banner/shape-1.png" alt="shape">
+                                    src="{{ url_for('static', filename='img/banner/shape-1.png') }}" alt="shape">
                                 <img data-parallax='{"x": 0, "y": -130, "rotateZ":0}' class="shape-2"
-                                    src="img/banner/shape-2.png" alt="shape">
+                                    src="{{ url_for('static', filename='img/banner/shape-2.png') }}" alt="shape">
                                 <img data-parallax='{"x": 250, "y":0, "rotateZ":0}' class="shape-3"
-                                    src="img/banner/shape-4.png" alt="shape">
+                                    src="{{ url_for('static', filename='img/banner/shape-4.png') }}" alt="shape">
                                 <img data-parallax='{"x": -200, "y": 250, "rotateZ":0}' class="shape-4"
-                                    src="img/banner/shape-5.png" alt="shape">
-                                <img class="shape-5" src="img/banner/shape-6.png" alt="shape">
-                                <img class="shape-6" src="img/banner/shape-7.png" alt="shape">
+                                    src="{{ url_for('static', filename='img/banner/shape-5.png') }}" alt="shape">
+                                <img class="shape-5" src="{{ url_for('static', filename='img/banner/shape-6.png') }}" alt="shape">
+                                <img class="shape-6" src="{{ url_for('static', filename='img/banner/shape-7.png') }}" alt="shape">
                             </div>
                         </div>
                     </div>
@@ -263,16 +263,16 @@
                                 data-wow-delay="0.1s">
 
                                 <div class="shapes">
-                                    <img src="img/feature/shape-6.png" alt="shape">
-                                    <img src="img/feature/shape-10.png" alt="shape">
-                                    <img src="img/feature/shape-4.png" alt="shape">
-                                    <img src="img/feature/shape-3.png" alt="shape">
-                                    <img src="img/feature/shape-12.png" alt="shape">
-                                    <img src="img/feature/shape-12.png" alt="shape">
+                                    <img src="{{ url_for('static', filename='img/feature/shape-6.png') }}" alt="shape">
+                                    <img src="{{ url_for('static', filename='img/feature/shape-10.png') }}" alt="shape">
+                                    <img src="{{ url_for('static', filename='img/feature/shape-4.png') }}" alt="shape">
+                                    <img src="{{ url_for('static', filename='img/feature/shape-3.png') }}" alt="shape">
+                                    <img src="{{ url_for('static', filename='img/feature/shape-12.png') }}" alt="shape">
+                                    <img src="{{ url_for('static', filename='img/feature/shape-12.png') }}" alt="shape">
                                 </div>
 
                                 <div class="feature-img">
-                                    <img src="img/feature/icon-5.png" alt="">
+                                    <img src="{{ url_for('static', filename='img/feature/icon-5.png') }}" alt="">
                                 </div>
                                 <div class="feature-content">
                                     <p>UP TO $5M</p>
@@ -284,15 +284,15 @@
                             <div class="feature-widget-2 align-items-center wow fadeInRight feature-2"
                                 data-wow-delay="0.3s">
                                 <div class="shapes">
-                                    <img src="img/feature/shape-13.png" alt="shape">
-                                    <img src="img/feature/shape-14.png" alt="shape">
-                                    <img src="img/feature/shape-15.png" alt="shape">
-                                    <img src="img/feature/shape-11.png" alt="shape">
-                                    <img src="img/feature/shape-12.png" alt="shape">
-                                    <img src="img/feature/shape-5.png" alt="shape">
+                                    <img src="{{ url_for('static', filename='img/feature/shape-13.png') }}" alt="shape">
+                                    <img src="{{ url_for('static', filename='img/feature/shape-14.png') }}" alt="shape">
+                                    <img src="{{ url_for('static', filename='img/feature/shape-15.png') }}" alt="shape">
+                                    <img src="{{ url_for('static', filename='img/feature/shape-11.png') }}" alt="shape">
+                                    <img src="{{ url_for('static', filename='img/feature/shape-12.png') }}" alt="shape">
+                                    <img src="{{ url_for('static', filename='img/feature/shape-5.png') }}" alt="shape">
                                 </div>
                                 <div class="feature-img">
-                                    <img src="img/feature/icon-6.png" alt="">
+                                    <img src="{{ url_for('static', filename='img/feature/icon-6.png') }}" alt="">
                                 </div>
                                 <div class="feature-content">
                                     <p>FROM 7.50%</p>
@@ -304,14 +304,14 @@
                             <div class="feature-widget-2 align-items-center wow fadeInRight feature-3"
                                 data-wow-delay="0.5s">
                                 <div class="shapes">
-                                    <img src="img/feature/shape-1.png" alt="shape">
-                                    <img src="img/feature/shape-2.png" alt="shape">
-                                    <img src="img/feature/shape-6.png" alt="shape">
-                                    <img src="img/feature/shape-9.png" alt="shape">
-                                    <img src="img/feature/shape-11.png" alt="shape">
+                                    <img src="{{ url_for('static', filename='img/feature/shape-1.png') }}" alt="shape">
+                                    <img src="{{ url_for('static', filename='img/feature/shape-2.png') }}" alt="shape">
+                                    <img src="{{ url_for('static', filename='img/feature/shape-6.png') }}" alt="shape">
+                                    <img src="{{ url_for('static', filename='img/feature/shape-9.png') }}" alt="shape">
+                                    <img src="{{ url_for('static', filename='img/feature/shape-11.png') }}" alt="shape">
                                 </div>
                                 <div class="feature-img">
-                                    <img src="img/feature/icon-7.png" alt="">
+                                    <img src="{{ url_for('static', filename='img/feature/icon-7.png') }}" alt="">
                                 </div>
                                 <div class="feature-content">
                                     <p>7 DAYS PROCESS</p>
@@ -379,7 +379,7 @@
                         <div class="feature-card-widget-2 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="icon-bg-1">
 
-                                <img src="img/corporate-finance/icon-5.svg" alt="icon">
+                                <img src="{{ url_for('static', filename='img/corporate-finance/icon-5.svg') }}" alt="icon">
                             </div>
                             <h5>Freelancers</h5>
                             <p>The best business account to send and receive payments on a daily basis.</p>
@@ -390,7 +390,7 @@
                         <div class="feature-card-widget-2 wow fadeInUp" data-wow-delay="0.3s">
                             <div class="icon-bg-2">
 
-                                <img src="img/corporate-finance/icon-2.svg" alt="icon">
+                                <img src="{{ url_for('static', filename='img/corporate-finance/icon-2.svg') }}" alt="icon">
                             </div>
                             <h5>SMBs & Startups</h5>
                             <p>Optimize your team's expenses by always staying in control.</p>
@@ -401,7 +401,7 @@
                         <div class="feature-card-widget-2 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="icon-bg-3">
 
-                                <img src="img/corporate-finance/icon-3.svg" alt="icon">
+                                <img src="{{ url_for('static', filename='img/corporate-finance/icon-3.svg') }}" alt="icon">
                             </div>
                             <h5>Business Founders</h5>
                             <p>Open a business account for the online deposit of your share capital.</p>
@@ -412,7 +412,7 @@
                         <div class="feature-card-widget-2 wow fadeInUp" data-wow-delay="0.7s">
                             <div class="icon-bg-4">
 
-                                <img src="img/corporate-finance/icon-4.svg" alt="icon">
+                                <img src="{{ url_for('static', filename='img/corporate-finance/icon-4.svg') }}" alt="icon">
                             </div>
                             <h5>Microbusinesses</h5>
                             <p>Stay focused on your core business by managing your finances and accounting.</p>
@@ -441,7 +441,7 @@
                         <div class="single-widget apply-online wow fadeInUp" data-wow-delay="0.1s">
                             <div class="widget-header">
                                 <div class="widget-img">
-                                    <img src="img/how-works/icon-1.png" alt="icon">
+                                    <img src="{{ url_for('static', filename='img/how-works/icon-1.png') }}" alt="icon">
                                 </div>
                                 <div class="widget-title">
                                     <h4>Apply Online</h4>
@@ -467,7 +467,7 @@
                         <div class="single-widget consultation wow fadeInUp" data-wow-delay="0.3s">
                             <div class="widget-header">
                                 <div class="widget-img">
-                                    <img src="img/how-works/icon-2.png" alt="icon">
+                                    <img src="{{ url_for('static', filename='img/how-works/icon-2.png') }}" alt="icon">
                                 </div>
                                 <div class="widget-title">
                                     <h4>Consultation</h4>
@@ -496,22 +496,22 @@
         <section class="security-area">
             <div class="security-priority pt-90 pb-95 text-center">
                 <div class="shapes">
-                    <img src="img/security-tips/shape-1.png" alt="shape">
-                    <img src="img/security-tips/shape-2.png" alt="shape">
-                    <img src="img/security-tips/shape-3.png" alt="shape">
-                    <img src="img/security-tips/shape-4.png" alt="shape">
-                    <img src="img/security-tips/shape-5.png" alt="shape">
-                    <img src="img/security-tips/shape-6.png" alt="shape">
-                    <img src="img/security-tips/shape-1.png" alt="shape">
-                    <img data-parallax='{"x": -60, "y": 150, "rotateZ":-15}' src="img/security-tips/shape-7.png"
+                    <img src="{{ url_for('static', filename='img/security-tips/shape-1.png') }}" alt="shape">
+                    <img src="{{ url_for('static', filename='img/security-tips/shape-2.png') }}" alt="shape">
+                    <img src="{{ url_for('static', filename='img/security-tips/shape-3.png') }}" alt="shape">
+                    <img src="{{ url_for('static', filename='img/security-tips/shape-4.png') }}" alt="shape">
+                    <img src="{{ url_for('static', filename='img/security-tips/shape-5.png') }}" alt="shape">
+                    <img src="{{ url_for('static', filename='img/security-tips/shape-6.png') }}" alt="shape">
+                    <img src="{{ url_for('static', filename='img/security-tips/shape-1.png') }}" alt="shape">
+                    <img data-parallax='{"x": -60, "y": 150, "rotateZ":-15}' src="{{ url_for('static', filename='img/security-tips/shape-7.png') }}"
                         alt="shape">
-                    <img data-parallax='{"x": 0, "y": -150, "rotateZ":0}' src="img/security-tips/shape-8.png"
+                    <img data-parallax='{"x": 0, "y": -150, "rotateZ":0}' src="{{ url_for('static', filename='img/security-tips/shape-8.png') }}"
                         alt="shape">
                 </div>
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-6 mx-auto">
-                            <img src="img/security-tips/security-priority.png" alt="icon">
+                            <img src="{{ url_for('static', filename='img/security-tips/security-priority.png') }}" alt="icon">
                             <h2 class="mt-4 mb-3">Your security. Our priority.</h2>
                             <p>We always have your security in mind. Rest easy knowing your data is protected with
                                 128-bit encryption. <a href="#">Learn more.</a></p>
@@ -651,7 +651,7 @@
                     </div>
                     <div class="col-md-4 offset-lg-1 mt-4 mt-md-0 ps-lg-5">
                         <div class="faq-img">
-                            <img class="img-fluid" src="img/faq/illustration.png" alt="faq-image">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/faq/illustration.png') }}" alt="faq-image">
                         </div>
                     </div>
                 </div>
@@ -665,13 +665,13 @@
                         <div class="cta cta-bg-primary">
 
                             <div class="shapes">
-                                <img src="img/cta/icon-1.png" alt="shape">
-                                <img data-parallax='{"x": 150, "y": 0, "rotateZ":-0}' src="img/cta/icon-2.png"
+                                <img src="{{ url_for('static', filename='img/cta/icon-1.png') }}" alt="shape">
+                                <img data-parallax='{"x": 150, "y": 0, "rotateZ":-0}' src="{{ url_for('static', filename='img/cta/icon-2.png') }}"
                                     alt="shape">
-                                <img src="img/cta/icon-3.png" alt="shape">
-                                <img src="img/cta/icon-4.png" alt="shape">
-                                <img src="img/cta/icon-5.png" alt="shape">
-                                <img data-parallax='{"x": 400, "y": 0, "rotateZ":0}' src="img/cta/icon-6.png"
+                                <img src="{{ url_for('static', filename='img/cta/icon-3.png') }}" alt="shape">
+                                <img src="{{ url_for('static', filename='img/cta/icon-4.png') }}" alt="shape">
+                                <img src="{{ url_for('static', filename='img/cta/icon-5.png') }}" alt="shape">
+                                <img data-parallax='{"x": 400, "y": 0, "rotateZ":0}' src="{{ url_for('static', filename='img/cta/icon-6.png') }}"
                                     alt="shape">
                             </div>
 
@@ -774,7 +774,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-3 text-center text-lg-start">
-                        <a href="index.html" class="p-0 m-0"><img src="img/logo/Logo.png" alt="logo"></a>
+                        <a href="index.html" class="p-0 m-0"><img src="{{ url_for('static', filename='img/logo/Logo.png') }}" alt="logo"></a>
                     </div>
                     <div class="col-lg-5 text-center my-3 my-sm-0">
                         <div class="copyright-text">
@@ -803,18 +803,18 @@
     <a id="back-to-top" title="Back to Top"></a>
 
     <!-- JS here -->
-    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="js/preloader.js"></script>
-    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="js/jquery.smoothscroll.min.js"></script>
-    <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
-    <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
-    <script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
-    <script type="text/javascript" src="js/parallax.js"></script>
-    <script type="text/javascript" src="js/jquery.parallax-scroll.js"></script>
-    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.6.0.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/preloader.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.smoothscroll.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.waypoints.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.nice-select.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/parallax.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.parallax-scroll.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/custom.js') }}"></script>
 </body>
 
 </html>

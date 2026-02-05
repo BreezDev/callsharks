@@ -6,23 +6,23 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Banca - Banking & Business Loan Bootstrap-5 HTML Template</title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}" type="image/x-icon">
 
     <!-- CSS here -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/elegant-icons.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/all.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/slick.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/nice-select.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/nouislider.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/flatpickr.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/default.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/elegant-icons.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/all.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/slick.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/slick-theme.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/nice-select.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/nouislider.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/jquery.fancybox.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/flatpickr.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/default.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive.css') }}" media="all" />
 </head>
 
 <body>
@@ -32,7 +32,7 @@
             <div class="round_spinner">
                 <div class="spinner"></div>
                 <div class="text">
-                    <img src="img/logo/Logo-2.png" alt="">
+                    <img src="{{ url_for('static', filename='img/logo/Logo-2.png') }}" alt="">
                 </div>
             </div>
             <h2 class="head">Did You Know?</h2>
@@ -45,7 +45,7 @@
             <nav class="navbar navbar-expand-lg ">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
-                        <img src="img/logo/Logo-2.png" srcset="img/logo/Logo-2@2x.png 2x" alt="logo">
+                        <img src="{{ url_for('static', filename='img/logo/Logo-2.png') }}" srcset="{{ url_for('static', filename='img/logo/Logo-2@2x.png') }} 2x" alt="logo">
                     </a>
                     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -186,7 +186,7 @@
 
         <!-- banner section -->
         <section class="banner-saas-area">
-            <img class="shape_img" src="img/saas-app/grid.png" alt="">
+            <img class="shape_img" src="{{ url_for('static', filename='img/saas-app/grid.png') }}" alt="">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="saas-banner-content text-center">
@@ -209,7 +209,7 @@
                     </div>
                 </div>
                 <div class="dahbord_img wow fadeInUp" data-wow-delay="0.5s">
-                    <img src="img/saas-app/dashboard.png" alt="saas">
+                    <img src="{{ url_for('static', filename='img/saas-app/dashboard.png') }}" alt="saas">
                 </div>
             </div>
         </section>
@@ -223,23 +223,23 @@
                 <div class="row gy-md-0 gy-4 align-items-center h-100">
                     <div class="col">
                         <a href="#"><img class="clients-logo img-fluid wow fadeInRight" data-wow-delay="0.1s"
-                                src="img/saas-app/c_logo_1.png" alt="logo"></a>
+                                src="{{ url_for('static', filename='img/saas-app/c_logo_1.png') }}" alt="logo"></a>
                     </div>
                     <div class="col">
                         <a href="#"><img class="clients-logo img-fluid wow fadeInRight" data-wow-delay="0.3s"
-                                src="img/saas-app/c_logo_2.png" alt="logo"></a>
+                                src="{{ url_for('static', filename='img/saas-app/c_logo_2.png') }}" alt="logo"></a>
                     </div>
                     <div class="col">
                         <a href="#"><img class="clients-logo img-fluid wow fadeInRight" data-wow-delay="0.5s"
-                                src="img/saas-app/c_logo_3.png" alt="logo"></a>
+                                src="{{ url_for('static', filename='img/saas-app/c_logo_3.png') }}" alt="logo"></a>
                     </div>
                     <div class="col">
                         <a href="#"><img class="clients-logo img-fluid wow fadeInRight" data-wow-delay="0.7s"
-                                src="img/saas-app/c_logo_4.png" alt="logo"></a>
+                                src="{{ url_for('static', filename='img/saas-app/c_logo_4.png') }}" alt="logo"></a>
                     </div>
                     <div class="col">
                         <a href="#"><img class="clients-logo img-fluid wow fadeInRight" data-wow-delay="0.7s"
-                                src="img/saas-app/c_logo_5.png" alt="logo"></a>
+                                src="{{ url_for('static', filename='img/saas-app/c_logo_5.png') }}" alt="logo"></a>
                     </div>
                 </div>
             </div>
@@ -258,7 +258,7 @@
                     <div class="col-lg-4">
                         <div class="feature-card-widget-8 saas-feature-card wow fadeInUp" data-wow-delay="0.1s">
                             <div class="card-img">
-                                <img src="img/saas-app/clap.svg" alt="feature svg">
+                                <img src="{{ url_for('static', filename='img/saas-app/clap.svg') }}" alt="feature svg">
                             </div>
                             <h4>Making genuine loans</h4>
                             <p>There are many variations in passage lorem Ipsum available of them will.
@@ -269,7 +269,7 @@
                     <div class="col-lg-4">
                         <div class="feature-card-widget-8 saas-feature-card wow fadeInUp" data-wow-delay="0.3s">
                             <div class="card-img">
-                                <img src="img/saas-app/hand.svg" alt="feature svg">
+                                <img src="{{ url_for('static', filename='img/saas-app/hand.svg') }}" alt="feature svg">
                             </div>
                             <h4>Almost limitless amount</h4>
                             <p>There are many variations in passage lorem Ipsum available of them will.
@@ -280,7 +280,7 @@
                     <div class="col-lg-4">
                         <div class="feature-card-widget-8 saas-feature-card wow fadeInUp" data-wow-delay="0.6s">
                             <div class="card-img">
-                                <img src="img/saas-app/house.svg" alt="feature svg">
+                                <img src="{{ url_for('static', filename='img/saas-app/house.svg') }}" alt="feature svg">
                             </div>
                             <h4>Safe & secure banking</h4>
                             <p>There are many variations in passage lorem Ipsum available of them will.
@@ -299,7 +299,7 @@
                 <div class="saas-features-item row align-items-center">
                     <div class="col-lg-6">
                         <div class="saas-features-img">
-                            <img class="wow fadeInRight" data-wow-delay="0.3s" src="img/saas-app/features_img_one.png"
+                            <img class="wow fadeInRight" data-wow-delay="0.3s" src="{{ url_for('static', filename='img/saas-app/features_img_one.png') }}"
                                 alt="">
                         </div>
                     </div>
@@ -314,14 +314,14 @@
                             </div>
                             <div class="d-flex">
                                 <div class="features-icon-box wow fadeInUp" data-wow-delay="0.3s">
-                                    <div class="round_icon"><img src="img/saas-app/hand.png" alt=""></div>
+                                    <div class="round_icon"><img src="{{ url_for('static', filename='img/saas-app/hand.png') }}" alt=""></div>
                                     <div class="text">
                                         <h4>Single term fees</h4>
                                         <p>Easily copy and paste Pricing components</p>
                                     </div>
                                 </div>
                                 <div class="features-icon-box two wow fadeInUp" data-wow-delay="0.5s">
-                                    <div class="round_icon"><img src="img/saas-app/travel_explore.png" alt=""></div>
+                                    <div class="round_icon"><img src="{{ url_for('static', filename='img/saas-app/travel_explore.png') }}" alt=""></div>
                                     <div class="text">
                                         <h4>150+ Locations</h4>
                                         <p>Easily copy and paste Pricing components</p>
@@ -334,7 +334,7 @@
                 <div class="saas-features-item row align-items-center flex-row-reverse">
                     <div class="col-lg-6">
                         <div class="saas-features-img">
-                            <img class="wow fadeInLeft" data-wow-delay="0.2s" src="img/saas-app/features_img_two.png"
+                            <img class="wow fadeInLeft" data-wow-delay="0.2s" src="{{ url_for('static', filename='img/saas-app/features_img_two.png') }}"
                                 alt="">
                         </div>
                     </div>
@@ -368,7 +368,7 @@
         <!-- saas features area  -->
         <!-- app showcase start -->
         <section class="app-showcase-area">
-            <img class="shape_img" src="img/saas-app/grid-two.png" alt="">
+            <img class="shape_img" src="{{ url_for('static', filename='img/saas-app/grid-two.png') }}" alt="">
             <div class="container">
                 <div class="saas-section-title text-center mb-60 wow fadeInUp" data-wow-delay="0.2s">
                     <h2>All your <span>finance</span> in one app</h2>
@@ -383,7 +383,7 @@
                             <p class="wow fadeInUp" data-wow-delay="0.7s">I transform thorn problems into elagant
                                 solutions using visuals design use this pack
                                 illustrations for many.</p>
-                            <img class="wow fadeInUp" data-wow-delay="0.9s" src="img/saas-app/app_showcase1.png" alt="">
+                            <img class="wow fadeInUp" data-wow-delay="0.9s" src="{{ url_for('static', filename='img/saas-app/app_showcase1.png') }}" alt="">
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -393,7 +393,7 @@
                             <p class="wow fadeInUp" data-wow-delay="0.7s">I transform thorn problems into elagant
                                 solutions using visuals design use this pack
                                 illustrations for many.</p>
-                            <img class="wow fadeInUp" data-wow-delay="0.9s" src="img/saas-app/app_showcase2.png" alt="">
+                            <img class="wow fadeInUp" data-wow-delay="0.9s" src="{{ url_for('static', filename='img/saas-app/app_showcase2.png') }}" alt="">
                         </div>
                     </div>
                     <div class="col-lg-12">
@@ -406,11 +406,11 @@
                                     calculator</a>
                             </div>
                             <div class="img wow fadeInRight" data-wow-delay="0.4ss">
-                                <img src="img/saas-app/dash_app.png" alt="">
+                                <img src="{{ url_for('static', filename='img/saas-app/dash_app.png') }}" alt="">
                                 <div class="app_shap_img one"><img data-parallax='{"x": 0, "y": -80}'
-                                        src="img/saas-app/dash_app_small.png" alt=""></div>
+                                        src="{{ url_for('static', filename='img/saas-app/dash_app_small.png') }}" alt=""></div>
                                 <div class="app_shap_img two"><img data-parallax='{"x": 0, "y": 50}'
-                                        src="img/saas-app/dash_app_small2.png" alt=""></div>
+                                        src="{{ url_for('static', filename='img/saas-app/dash_app_small2.png') }}" alt=""></div>
                             </div>
                         </div>
                     </div>
@@ -686,7 +686,7 @@
                 </div>
             </div>
             <img class="saas_dash_img wow fadeInUp" data-parallax='{"x": -40, "y": 50}' data-wow-delay="0.2s"
-                src="img/saas-app/subscribe-dashboard.png" alt="">
+                src="{{ url_for('static', filename='img/saas-app/subscribe-dashboard.png') }}" alt="">
         </section>
         <!-- footer start -->
         <footer class="saas-footer-area bg-white">
@@ -755,12 +755,12 @@
                         </div>
                         <div class="col-lg-5 col-md-6">
                             <ul class="list-unstyled payment-list">
-                                <li><a href="#"><img src="img/saas-app/visa.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/saas-app/amazon.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/saas-app/stripe.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/saas-app/paypal.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/saas-app/amex.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/saas-app/discover.png" alt=""></a></li>
+                                <li><a href="#"><img src="{{ url_for('static', filename='img/saas-app/visa.png') }}" alt=""></a></li>
+                                <li><a href="#"><img src="{{ url_for('static', filename='img/saas-app/amazon.png') }}" alt=""></a></li>
+                                <li><a href="#"><img src="{{ url_for('static', filename='img/saas-app/stripe.png') }}" alt=""></a></li>
+                                <li><a href="#"><img src="{{ url_for('static', filename='img/saas-app/paypal.png') }}" alt=""></a></li>
+                                <li><a href="#"><img src="{{ url_for('static', filename='img/saas-app/amex.png') }}" alt=""></a></li>
+                                <li><a href="#"><img src="{{ url_for('static', filename='img/saas-app/discover.png') }}" alt=""></a></li>
                             </ul>
                         </div>
                     </div>
@@ -773,19 +773,19 @@
         <a id="back-to-top" title="Back to Top"></a>
 
         <!-- JS here -->
-        <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-        <script type="text/javascript" src="js/preloader.js"></script>
-        <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-        <script type="text/javascript" src="js/jquery.smoothscroll.min.js"></script>
-        <script type="text/javascript" src="js/jquery.parallax-scroll.js"></script>
-        <script type="text/javascript" src="js/slick.min.js"></script>
-        <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
-        <script type="text/javascript" src="js/nouislider.min.js"></script>
-        <script type="text/javascript" src="js/wNumb.js"></script>
-        <script type="text/javascript" src="js/flatpickr.min.js"></script>
-        <script type="text/javascript" src="js/wow.min.js"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.6.0.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/preloader.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.smoothscroll.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.parallax-scroll.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/slick.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.fancybox.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/nouislider.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/wNumb.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/flatpickr.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
         <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-        <script type="text/javascript" src="js/custom.js"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/custom.js') }}"></script>
 </body>
 
 </html>

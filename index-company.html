@@ -6,23 +6,23 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Banca - Banking & Business Loan Bootstrap-5 HTML Template</title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}" type="image/x-icon">
 
     <!-- CSS here -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/elegant-icons.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/all.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/slick.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/nice-select.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/nouislider.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/flatpickr.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/default.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/elegant-icons.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/all.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/slick.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/slick-theme.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/nice-select.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/nouislider.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/jquery.fancybox.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/flatpickr.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/default.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive.css') }}" media="all" />
 </head>
 
 <body>
@@ -32,7 +32,7 @@
             <div class="round_spinner">
                 <div class="spinner"></div>
                 <div class="text">
-                    <img src="img/logo/Logo-2.png" alt="">
+                    <img src="{{ url_for('static', filename='img/logo/Logo-2.png') }}" alt="">
                 </div>
             </div>
             <h2 class="head">Did You Know?</h2>
@@ -45,7 +45,7 @@
             <nav class="navbar navbar-expand-lg ">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
-                        <img src="img/logo/Logo-2.png" srcset="img/logo/Logo-2@2x.png 2x" alt="logo">
+                        <img src="{{ url_for('static', filename='img/logo/Logo-2.png') }}" srcset="{{ url_for('static', filename='img/logo/Logo-2@2x.png') }} 2x" alt="logo">
                     </a>
                     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -207,13 +207,13 @@
                     </div>
                     <div class="col-lg-5 text-center text-lg-start">
                         <div class="banner-img">
-                            <img class="img-1 wow fadeInLeft" data-wow-delay="0.3s" src="img/home-5/banner-img-1.png"
+                            <img class="img-1 wow fadeInLeft" data-wow-delay="0.3s" src="{{ url_for('static', filename='img/home-5/banner-img-1.png') }}"
                                 alt="">
-                            <img class="img-2 wow fadeInRight" data-wow-delay="0.8s" src="img/home-5/banner-img-2.png"
+                            <img class="img-2 wow fadeInRight" data-wow-delay="0.8s" src="{{ url_for('static', filename='img/home-5/banner-img-2.png') }}"
                                 alt="">
-                            <img class="img-3 wow fadeInRight" data-wow-delay="1.1s" src="img/home-5/banner-img-3.png"
+                            <img class="img-3 wow fadeInRight" data-wow-delay="1.1s" src="{{ url_for('static', filename='img/home-5/banner-img-3.png') }}"
                                 alt="">
-                            <img class="img-shape" src="img/home-5/banner-shape.png" alt="">
+                            <img class="img-shape" src="{{ url_for('static', filename='img/home-5/banner-shape.png') }}" alt="">
                         </div>
                     </div>
                 </div>
@@ -266,14 +266,14 @@
                 <div class="row gy-4 mt-50">
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="feature-card-widget-9 wow fadeInUp" data-wow-delay="0.1s">
-                            <img src="img/home-5/feature-icon-1.svg" alt="">
+                            <img src="{{ url_for('static', filename='img/home-5/feature-icon-1.svg') }}" alt="">
                             <h5>Fast Mobility</h5>
                             <p>Quis dapibus volutpat condi</p>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="feature-card-widget-9 wow fadeInUp" data-wow-delay="0.3s">
-                            <img src="img/home-5/feature-icon-2.svg" alt="">
+                            <img src="{{ url_for('static', filename='img/home-5/feature-icon-2.svg') }}" alt="">
                             <h5>Term Loan</h5>
                             <p>Quis dapibus volutpat condi</p>
                         </div>
@@ -281,35 +281,35 @@
 
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="feature-card-widget-9 wow fadeInUp" data-wow-delay="0.5s">
-                            <img src="img/home-5/feature-icon-3.svg" alt="">
+                            <img src="{{ url_for('static', filename='img/home-5/feature-icon-3.svg') }}" alt="">
                             <h5>Easy Experience</h5>
                             <p>Quis dapibus volutpat condi</p>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="feature-card-widget-9 wow fadeInUp" data-wow-delay="0.7s">
-                            <img src="img/home-5/feature-icon-4.svg" alt="">
+                            <img src="{{ url_for('static', filename='img/home-5/feature-icon-4.svg') }}" alt="">
                             <h5>Safe and protected</h5>
                             <p>Quis dapibus volutpat condi</p>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="feature-card-widget-9 wow fadeInUp" data-wow-delay="0.9s">
-                            <img src="img/home-5/feature-icon-5.svg" alt="">
+                            <img src="{{ url_for('static', filename='img/home-5/feature-icon-5.svg') }}" alt="">
                             <h5>Wordwide</h5>
                             <p>Quis dapibus volutpat condi</p>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="feature-card-widget-9 wow fadeInUp" data-wow-delay="1.1s">
-                            <img src="img/home-5/feature-icon-6.svg" alt="">
+                            <img src="{{ url_for('static', filename='img/home-5/feature-icon-6.svg') }}" alt="">
                             <h5>One term fees</h5>
                             <p>Quis dapibus volutpat condi</p>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="feature-card-widget-9 wow fadeInUp" data-wow-delay="1.3s">
-                            <img src="img/home-5/feature-icon-7.svg" alt="">
+                            <img src="{{ url_for('static', filename='img/home-5/feature-icon-7.svg') }}" alt="">
                             <h5>Merchant Payment</h5>
                             <p>Quis dapibus volutpat condi</p>
                         </div>
@@ -350,11 +350,11 @@
                     </div>
                     <div class="col-lg-6 wow fadeInRight">
                         <div class="sms-flow">
-                            <img class="arrow-1" src="img/home-5/about-arrow-1.png" alt="">
-                            <img class="arrow-2" src="img/home-5/about-arrow-2.png" alt="">
-                            <img class="msg-1 wow fadeInUp" data-wow-delay="0.1s" src="img/home-5/msg-1.png" alt="">
-                            <img class="msg-2" src="img/home-5/msg-2.png" alt="">
-                            <img class="msg-3 wow fadeInDown" data-wow-delay="0.3s" src="img/home-5/msg-3.png" alt="">
+                            <img class="arrow-1" src="{{ url_for('static', filename='img/home-5/about-arrow-1.png') }}" alt="">
+                            <img class="arrow-2" src="{{ url_for('static', filename='img/home-5/about-arrow-2.png') }}" alt="">
+                            <img class="msg-1 wow fadeInUp" data-wow-delay="0.1s" src="{{ url_for('static', filename='img/home-5/msg-1.png') }}" alt="">
+                            <img class="msg-2" src="{{ url_for('static', filename='img/home-5/msg-2.png') }}" alt="">
+                            <img class="msg-3 wow fadeInDown" data-wow-delay="0.3s" src="{{ url_for('static', filename='img/home-5/msg-3.png') }}" alt="">
                         </div>
                     </div>
                 </div>
@@ -364,8 +364,8 @@
                         <div class="card-holder">
                             <div class="shape-1"></div>
                             <div class="shape-2"></div>
-                            <img class="img-1 img-fluid" src="img/home-5/card-holder.png" alt="">
-                            <img class="img-2 wow fadeInRight" data-wow-delay="0.2s" src="img/home-5/bank-balance.png"
+                            <img class="img-1 img-fluid" src="{{ url_for('static', filename='img/home-5/card-holder.png') }}" alt="">
+                            <img class="img-2 wow fadeInRight" data-wow-delay="0.2s" src="{{ url_for('static', filename='img/home-5/bank-balance.png') }}"
                                 alt="">
                         </div>
 
@@ -529,55 +529,55 @@
                 </div>
                 <div class="loan-slider pt-80">
                     <div class="single-slide">
-                        <div class="icon"><img src="img/home-5/loan-type-1.png" alt=""></div>
+                        <div class="icon"><img src="{{ url_for('static', filename='img/home-5/loan-type-1.png') }}" alt=""></div>
                         <h4>Personal Loans</h4>
                         <p>Our team of experts uses methodology
                             identify the credit cards most.</p>
                     </div>
                     <div class="single-slide">
-                        <div class="icon"><img src="img/home-5/loan-type-2.png" alt=""></div>
+                        <div class="icon"><img src="{{ url_for('static', filename='img/home-5/loan-type-2.png') }}" alt=""></div>
                         <h4>Installment Loans</h4>
                         <p>Our team of experts uses methodology
                             identify the credit cards most.</p>
                     </div>
                     <div class="single-slide">
-                        <div class="icon"><img src="img/home-5/loan-type-3.png" alt=""></div>
+                        <div class="icon"><img src="{{ url_for('static', filename='img/home-5/loan-type-3.png') }}" alt=""></div>
                         <h4>Payday Loans</h4>
                         <p>Our team of experts uses methodology
                             identify the credit cards most.</p>
                     </div>
                     <div class="single-slide">
-                        <div class="icon"><img src="img/home-5/loan-type-1.png" alt=""></div>
+                        <div class="icon"><img src="{{ url_for('static', filename='img/home-5/loan-type-1.png') }}" alt=""></div>
                         <h4>Personal Loans</h4>
                         <p>Our team of experts uses methodology
                             identify the credit cards most.</p>
                     </div>
                     <div class="single-slide">
-                        <div class="icon"><img src="img/home-5/loan-type-2.png" alt=""></div>
+                        <div class="icon"><img src="{{ url_for('static', filename='img/home-5/loan-type-2.png') }}" alt=""></div>
                         <h4>Installment Loans</h4>
                         <p>Our team of experts uses methodology
                             identify the credit cards most.</p>
                     </div>
                     <div class="single-slide">
-                        <div class="icon"><img src="img/home-5/loan-type-3.png" alt=""></div>
+                        <div class="icon"><img src="{{ url_for('static', filename='img/home-5/loan-type-3.png') }}" alt=""></div>
                         <h4>Payday Loans</h4>
                         <p>Our team of experts uses methodology
                             identify the credit cards most.</p>
                     </div>
                     <div class="single-slide">
-                        <div class="icon"><img src="img/home-5/loan-type-2.png" alt=""></div>
+                        <div class="icon"><img src="{{ url_for('static', filename='img/home-5/loan-type-2.png') }}" alt=""></div>
                         <h4>Installment Loans</h4>
                         <p>Our team of experts uses methodology
                             identify the credit cards most.</p>
                     </div>
                     <div class="single-slide">
-                        <div class="icon"><img src="img/home-5/loan-type-3.png" alt=""></div>
+                        <div class="icon"><img src="{{ url_for('static', filename='img/home-5/loan-type-3.png') }}" alt=""></div>
                         <h4>Payday Loans</h4>
                         <p>Our team of experts uses methodology
                             identify the credit cards most.</p>
                     </div>
                     <div class="single-slide">
-                        <div class="icon"><img src="img/home-5/loan-type-1.png" alt=""></div>
+                        <div class="icon"><img src="{{ url_for('static', filename='img/home-5/loan-type-1.png') }}" alt=""></div>
                         <h4>Personal Loans</h4>
                         <p>Our team of experts uses methodology
                             identify the credit cards most.</p>
@@ -609,7 +609,7 @@
                     </div>
                     <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.3s">
                         <div class="video-tut">
-                            <img src="img/home-5/about-us-img.png" alt="">
+                            <img src="{{ url_for('static', filename='img/home-5/about-us-img.png') }}" alt="">
                             <a class="play-btn" data-fancybox="" href="https://www.youtube.com/watch?v=xcJtL7QggTI"
                                 tabindex="0">
                                 <i class="fas fa-play"></i>
@@ -631,38 +631,38 @@
                 <div class="row mt-50 gy-xl-0 gy-4 text-center">
                     <div class="col-xl-2 col-lg-3 col-sm-4 col-6">
                         <a href="#" class="country-widget wow fadeInLeft" data-wow-delay="0.1s">
-                            <img src="img/home-5/country-1.png" alt="country">
+                            <img src="{{ url_for('static', filename='img/home-5/country-1.png') }}" alt="country">
                             <h5>Brazil</h5>
                         </a>
                     </div>
                     <div class="col-xl-2 col-lg-3 col-sm-4 col-6">
                         <a href="#" class="country-widget wow fadeInLeft" data-wow-delay="0.3s">
-                            <img src="img/home-5/country-2.png" alt="country">
+                            <img src="{{ url_for('static', filename='img/home-5/country-2.png') }}" alt="country">
                             <h5>Canada</h5>
                         </a>
                     </div>
                     <div class="col-xl-2 col-lg-3 col-sm-4 col-6">
                         <a href="#" class="country-widget wow fadeInLeft" data-wow-delay="0.5s">
-                            <img src="img/home-5/country-3.png" alt="country">
+                            <img src="{{ url_for('static', filename='img/home-5/country-3.png') }}" alt="country">
                             <h5>Australia</h5>
                         </a>
                     </div>
                     <div class="col-xl-2 col-lg-3 col-sm-4 col-6">
                         <a href="#" class="country-widget wow fadeInLeft" data-wow-delay="0.7s">
-                            <img src="img/home-5/country-4.png" alt="country">
+                            <img src="{{ url_for('static', filename='img/home-5/country-4.png') }}" alt="country">
                             <h5>USA</h5>
                         </a>
                     </div>
                     <div class="col-xl-2 col-lg-3 col-sm-4 col-6">
                         <a href="#" class="country-widget wow fadeInLeft" data-wow-delay="0.9s">
-                            <img src="img/home-5/country-5.png" alt="country">
+                            <img src="{{ url_for('static', filename='img/home-5/country-5.png') }}" alt="country">
                             <h5>South Korea</h5>
                         </a>
                     </div>
 
                     <div class="col-xl-2 col-lg-3 col-sm-4 col-6">
                         <a href="#" class="country-widget wow fadeInLeft" data-wow-delay="1.1s">
-                            <img src="img/home-5/country-6.png" alt="country">
+                            <img src="{{ url_for('static', filename='img/home-5/country-6.png') }}" alt="country">
                             <h5>Bangladesh</h5>
                         </a>
                     </div>
@@ -705,7 +705,7 @@
 
     <!-- footer -->
     <footer class="footer footer-2 pt-lg-130 pt-110 pb-100 pb-lg-125"
-        style="background-image: url(img/footer/footer-bg-2.png);">
+        style="background-image: url('{{ url_for('static', filename='\1') }}');">
         <div class="footer-top">
             <div class="container">
                 <div class="row">
@@ -718,7 +718,7 @@
                                     financial services that actually work for you.</p>
                             </div>
                             <div class="truspilot mt-40">
-                                <img src="img/footer/Trustpilot.png" alt="Trustpilot">
+                                <img src="{{ url_for('static', filename='img/footer/Trustpilot.png') }}" alt="Trustpilot">
                             </div>
                         </div>
                     </div>
@@ -786,7 +786,7 @@
                     <div class="col-xl-8 offset-xl-4">
                         <div class="row align-items-center gy-lg-0 gy-3 gx-0">
                             <div class="col-md-2  text-md-start text-center">
-                                <a href="index.html"><img src="img/logo/Logo.png" alt="logo"></a>
+                                <a href="index.html"><img src="{{ url_for('static', filename='img/logo/Logo.png') }}" alt="logo"></a>
                             </div>
                             <div class="col-md-6">
                                 <div class="line"></div>
@@ -818,18 +818,18 @@
     <a id="back-to-top" title="Back to Top"></a>
 
     <!-- JS here -->
-    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="js/preloader.js"></script>
-    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="js/jquery.smoothscroll.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
-    <script type="text/javascript" src="js/nouislider.min.js"></script>
-    <script type="text/javascript" src="js/wNumb.js"></script>
-    <script type="text/javascript" src="js/flatpickr.min.js"></script>
-    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.6.0.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/preloader.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.smoothscroll.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/slick.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.fancybox.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/nouislider.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/wNumb.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/flatpickr.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/custom.js') }}"></script>
 </body>
 
 </html>

@@ -6,20 +6,20 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<title>Banca - Banking & Business Loan Bootstrap-5 HTML Template</title>
-	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}" type="image/x-icon">
 
 	<!-- CSS here -->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="css/elegant-icons.min.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="css/all.min.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="css/slick.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="css/slick-theme.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="css/nice-select.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="css/default.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" media="all" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/elegant-icons.min.css') }}" media="all" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/all.min.css') }}" media="all" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate.css') }}" media="all" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/slick.css') }}" media="all" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/slick-theme.css') }}" media="all" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/nice-select.css') }}" media="all" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate.css') }}" media="all" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/default.css') }}" media="all" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" media="all" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive.css') }}" media="all" />
 </head>
 
 <body>
@@ -29,7 +29,7 @@
 			<div class="round_spinner">
 				<div class="spinner"></div>
 				<div class="text">
-					<img src="img/logo/Logo-2.png" alt="">
+					<img src="{{ url_for('static', filename='img/logo/Logo-2.png') }}" alt="">
 				</div>
 			</div>
 			<h2 class="head">Did You Know?</h2>
@@ -42,8 +42,8 @@
 			<nav class="navbar navbar-expand-lg ">
 				<div class="container">
 					<a class="navbar-brand sticky_logo" href="index.html">
-						<img class="main" src="img/logo/Logo.png" srcset="img/logo/Logo@2x.png 2x" alt="logo">
-						<img class="sticky" src="img/logo/Logo-3.png" srcset="img/logo/Logo-3@2x.png 2x" alt="logo">
+						<img class="main" src="{{ url_for('static', filename='img/logo/Logo.png') }}" srcset="{{ url_for('static', filename='img/logo/Logo@2x.png') }} 2x" alt="logo">
+						<img class="sticky" src="{{ url_for('static', filename='img/logo/Logo-3.png') }}" srcset="{{ url_for('static', filename='img/logo/Logo-3@2x.png') }} 2x" alt="logo">
 					</a>
 					<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
 						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -218,12 +218,12 @@
 				</div>
 			</div>
 			<div class="logos">
-				<img src="img/banner/Logo-1.png" alt="social">
-				<img src="img/banner/Logo-2.png" alt="social">
-				<img src="img/banner/Logo-3.png" alt="social">
-				<img src="img/banner/Logo-4.png" alt="social">
-				<img src="img/banner/Logo-5.png" alt="social">
-				<img src="img/banner/Logo-6.png" alt="social">
+				<img src="{{ url_for('static', filename='img/banner/Logo-1.png') }}" alt="social">
+				<img src="{{ url_for('static', filename='img/banner/Logo-2.png') }}" alt="social">
+				<img src="{{ url_for('static', filename='img/banner/Logo-3.png') }}" alt="social">
+				<img src="{{ url_for('static', filename='img/banner/Logo-4.png') }}" alt="social">
+				<img src="{{ url_for('static', filename='img/banner/Logo-5.png') }}" alt="social">
+				<img src="{{ url_for('static', filename='img/banner/Logo-6.png') }}" alt="social">
 			</div>
 			<div class="container">
 				<div class="row">
@@ -231,7 +231,7 @@
 						<div class="banner-content text-center pt-200">
 							<h1>Simple and Safe Digital <br /> Banking Mobile App</h1>
 							<div class="img-area mt-35">
-								<img class="img-fluid" data-depth="0.6" src="img/banner/person.png" alt="person">
+								<img class="img-fluid" data-depth="0.6" src="{{ url_for('static', filename='img/banner/person.png') }}" alt="person">
 							</div>
 
 							<div class="symbol-pulse">
@@ -250,7 +250,7 @@
 							<div class="row text-center gy-2 gy-lg-0">
 								<div class="col-lg-3 col-6">
 									<div class="statistics-widget-1 text-start pt-10">
-										<img src="img/banner/icon-1.svg" alt="icon">
+										<img src="{{ url_for('static', filename='img/banner/icon-1.svg') }}" alt="icon">
 										<p>Active user</p>
 										<h2 class="counter"><span>15,000</span></h2>
 									</div>
@@ -258,21 +258,21 @@
 
 								<div class="col-lg-3 col-6">
 									<div class="statistics-widget-1 text-start pt-10">
-										<img src="img/banner/icon-2.svg" alt="icon">
+										<img src="{{ url_for('static', filename='img/banner/icon-2.svg') }}" alt="icon">
 										<p>download</p>
 										<h2 class="counter"><span>49.9</span>k</h2>
 									</div>
 								</div>
 								<div class="col-lg-3 col-6">
 									<div class="statistics-widget-1 text-start pt-10">
-										<img src="img/banner/icon-3.svg" alt="icon">
+										<img src="{{ url_for('static', filename='img/banner/icon-3.svg') }}" alt="icon">
 										<p>reviews</p>
 										<h2 class="counter"><span>35.7</span>k</h2>
 									</div>
 								</div>
 								<div class="col-lg-3 col-6">
 									<div class="statistics-widget-1 text-start pt-10">
-										<img src="img/banner/icon-4.svg" alt="icon">
+										<img src="{{ url_for('static', filename='img/banner/icon-4.svg') }}" alt="icon">
 										<p>partners</p>
 										<h2 class="counter"><span>199</span>+</h2>
 									</div>
@@ -303,7 +303,7 @@
 					<div class="col-xl-3 col-md-6">
 						<div class="feature-card-widget wow fadeInUp">
 							<div class="card-img">
-								<img src="img/feature/icon-1.svg" alt="feature svg">
+								<img src="{{ url_for('static', filename='img/feature/icon-1.svg') }}" alt="feature svg">
 							</div>
 							<h4>Prepaid Card</h4>
 							<p>It is a long established fact that a reader will be distracted by the readable content
@@ -313,7 +313,7 @@
 					<div class="col-xl-3 col-md-6">
 						<div class="feature-card-widget wow fadeInUp" data-wow-delay="0.3s">
 							<div class="card-img">
-								<img src="img/feature/icon-2.svg" alt="feature svg">
+								<img src="{{ url_for('static', filename='img/feature/icon-2.svg') }}" alt="feature svg">
 							</div>
 							<h4>Easy to use</h4>
 							<p>The way to solve the word placement to treat the phrase "easy to use" as a single.</p>
@@ -322,7 +322,7 @@
 					<div class="col-xl-3 col-md-6">
 						<div class="feature-card-widget wow fadeInUp" data-wow-delay="0.6s">
 							<div class="card-img">
-								<img src="img/feature/icon-3.svg" alt="feature svg">
+								<img src="{{ url_for('static', filename='img/feature/icon-3.svg') }}" alt="feature svg">
 							</div>
 							<h4>save your Card</h4>
 							<p>We keep your information safe and notify you anytime your saved payment card.</p>
@@ -331,7 +331,7 @@
 					<div class="col-xl-3 col-md-6">
 						<div class="feature-card-widget wow fadeInUp" data-wow-delay="0.9s">
 							<div class="card-img">
-								<img src="img/feature/icon-4.svg" alt="feature svg">
+								<img src="{{ url_for('static', filename='img/feature/icon-4.svg') }}" alt="feature svg">
 							</div>
 							<h4>pay bill</h4>
 							<p>That's why we have a wide range of bill payment options through our Banking service.</p>
@@ -348,12 +348,12 @@
 				<div class="row gy-lg-0 gy-4 pb-10">
 					<div class="col-md-6 mx-auto">
 						<div class="img-content">
-							<img class="bg-img" src="img/track-progress/shape-bg.png" alt="">
-							<img class="track-3 wow fadeInUp" src="img/track-progress/track-1.png" alt="">
+							<img class="bg-img" src="{{ url_for('static', filename='img/track-progress/shape-bg.png') }}" alt="">
+							<img class="track-3 wow fadeInUp" src="{{ url_for('static', filename='img/track-progress/track-1.png') }}" alt="">
 							<img class="track-img track-1 wow fadeInRight" data-wow-delay="0.3s"
-								src="img/track-progress/track-2.png" alt="">
+								src="{{ url_for('static', filename='img/track-progress/track-2.png') }}" alt="">
 							<img class="track-img track-2 wow fadeInRight" data-wow-delay="0.5s"
-								src="img/track-progress/track-3.png" alt="">
+								src="{{ url_for('static', filename='img/track-progress/track-3.png') }}" alt="">
 						</div>
 					</div>
 
@@ -398,9 +398,9 @@
 					</div>
 					<div class="col-md-6 mx-auto offset-xl-1 order-1 order-lg-2">
 						<div class="img-content">
-							<img class="bg-img" src="img/card-payment/shape-bg.png" alt="">
-							<img class="card-1 img-fluid wow fadeInLeft" src="img/card-payment/card-1.png" alt="">
-							<img class="card-2 wow fadeInLeft" data-wow-delay="0.3s" src="img/card-payment/card-2.png"
+							<img class="bg-img" src="{{ url_for('static', filename='img/card-payment/shape-bg.png') }}" alt="">
+							<img class="card-1 img-fluid wow fadeInLeft" src="{{ url_for('static', filename='img/card-payment/card-1.png') }}" alt="">
+							<img class="card-2 wow fadeInLeft" data-wow-delay="0.3s" src="{{ url_for('static', filename='img/card-payment/card-2.png') }}"
 								alt="">
 						</div>
 					</div>
@@ -415,14 +415,14 @@
 				<div class="row gy-lg-0 gy-4">
 					<div class="col-md-6 mx-auto mx-lg-0 text-center">
 						<div class="img-content">
-							<img class="bg-img" src="img/internet-banking/shape-bg.png" alt="">
-							<img class="bank-main img-fluid wow fadeInUp" src="img/internet-banking/img-1.png" alt="">
+							<img class="bg-img" src="{{ url_for('static', filename='img/internet-banking/shape-bg.png') }}" alt="">
+							<img class="bank-main img-fluid wow fadeInUp" src="{{ url_for('static', filename='img/internet-banking/img-1.png') }}" alt="">
 							<img class="bank-1 img-fluid wow fadeInRight" data-wow-delay="0.3s"
-								src="img/internet-banking/img-2.png" alt="">
+								src="{{ url_for('static', filename='img/internet-banking/img-2.png') }}" alt="">
 							<img class="bank-2 img-fluid wow fadeInLeft" data-wow-delay="0.6s"
-								src="img/internet-banking/img-3.png" alt="">
+								src="{{ url_for('static', filename='img/internet-banking/img-3.png') }}" alt="">
 							<img class="bank-3 img-fluid wow fadeInRight" data-wow-delay="0.8s"
-								src="img/internet-banking/info.png" alt="">
+								src="{{ url_for('static', filename='img/internet-banking/info.png') }}" alt="">
 						</div>
 					</div>
 
@@ -458,7 +458,7 @@
 					<div class="col-xl-6">
 						<div class="single-security-widget wow fadeInUp">
 							<div class="security-img text-center">
-								<img class="img-fluid round-15" src="img/security-tips/img-1.png" alt="security image">
+								<img class="img-fluid round-15" src="{{ url_for('static', filename='img/security-tips/img-1.png') }}" alt="security image">
 							</div>
 							<div class="security-content">
 								<h4>Online Security</h4>
@@ -473,7 +473,7 @@
 							<div class="row align-items-center">
 								<div class="col-4">
 									<div class="security-img h-100">
-										<img class="img-fluid round-10 h-100" src="img/security-tips/img-2.png"
+										<img class="img-fluid round-10 h-100" src="{{ url_for('static', filename='img/security-tips/img-2.png') }}"
 											alt="security image">
 									</div>
 								</div>
@@ -507,7 +507,7 @@
 
 								<div class="col-5">
 									<div class="security-img h-100">
-										<img class="img-fluid round-10 h-100" src="img/security-tips/img-3.png"
+										<img class="img-fluid round-10 h-100" src="{{ url_for('static', filename='img/security-tips/img-3.png') }}"
 											alt="security image">
 									</div>
 								</div>
@@ -529,7 +529,7 @@
 
 				<div class=" client-slider pt-45 pb-140">
 					<div class="single-client wow fadeInUp" data-wow-delay="0.1s">
-						<img class="img-fluid rounded-circle" src="img/client/client-1.png" alt="cleint">
+						<img class="img-fluid rounded-circle" src="{{ url_for('static', filename='img/client/client-1.png') }}" alt="cleint">
 						<p class="quote">Assertively procrastinate distributed relationships whereas equity invested
 							intellectual capital
 							everything</p>
@@ -548,7 +548,7 @@
 						</div>
 					</div>
 					<div class="single-client wow fadeInUp" data-wow-delay="0.3s">
-						<img class="img-fluid rounded-circle" src="img/client/client-2.png" alt="cleint">
+						<img class="img-fluid rounded-circle" src="{{ url_for('static', filename='img/client/client-2.png') }}" alt="cleint">
 						<p class="quote">Assertively procrastinate distributed relationships whereas equity invested
 							intellectual capital
 							everything</p>
@@ -567,7 +567,7 @@
 						</div>
 					</div>
 					<div class="single-client wow fadeInUp" data-wow-delay="0.5s">
-						<img class="img-fluid rounded-circle" src="img/client/client-3.png" alt="cleint">
+						<img class="img-fluid rounded-circle" src="{{ url_for('static', filename='img/client/client-3.png') }}" alt="cleint">
 						<p class="quote">Assertively procrastinate distributed relationships whereas equity invested
 							intellectual capital
 							everything</p>
@@ -586,7 +586,7 @@
 						</div>
 					</div>
 					<div class="single-client wow fadeInUp" data-wow-delay="0.7s">
-						<img class="img-fluid rounded-circle" src="img/client/client-1.png" alt="cleint">
+						<img class="img-fluid rounded-circle" src="{{ url_for('static', filename='img/client/client-1.png') }}" alt="cleint">
 						<p class="quote">Assertively procrastinate distributed relationships whereas equity invested
 							intellectual capital
 							everything</p>
@@ -605,7 +605,7 @@
 						</div>
 					</div>
 					<div class="single-client wow fadeInUp" data-wow-delay="0.9s">
-						<img class="img-fluid rounded-circle" src="img/client/client-2.png" alt="cleint">
+						<img class="img-fluid rounded-circle" src="{{ url_for('static', filename='img/client/client-2.png') }}" alt="cleint">
 						<p class="quote">Assertively procrastinate distributed relationships whereas equity invested
 							intellectual capital
 							everything</p>
@@ -624,7 +624,7 @@
 						</div>
 					</div>
 					<div class="single-client wow fadeInUp" data-wow-delay="1.1s">
-						<img class="img-fluid rounded-circle" src="img/client/client-3.png" alt="cleint">
+						<img class="img-fluid rounded-circle" src="{{ url_for('static', filename='img/client/client-3.png') }}" alt="cleint">
 						<p class="quote">Assertively procrastinate distributed relationships whereas equity invested
 							intellectual capital
 							everything</p>
@@ -643,7 +643,7 @@
 						</div>
 					</div>
 					<div class="single-client wow fadeInUp" data-wow-delay="1.3s">
-						<img class="img-fluid rounded-circle" src="img/client/client-1.png" alt="cleint">
+						<img class="img-fluid rounded-circle" src="{{ url_for('static', filename='img/client/client-1.png') }}" alt="cleint">
 						<p class="quote">Assertively procrastinate distributed relationships whereas equity invested
 							intellectual capital
 							everything</p>
@@ -662,7 +662,7 @@
 						</div>
 					</div>
 					<div class="single-client wow fadeInUp" data-wow-delay="1.5s">
-						<img class="img-fluid rounded-circle" src="img/client/client-2.png" alt="cleint">
+						<img class="img-fluid rounded-circle" src="{{ url_for('static', filename='img/client/client-2.png') }}" alt="cleint">
 						<p class="quote">Assertively procrastinate distributed relationships whereas equity invested
 							intellectual capital
 							everything</p>
@@ -681,7 +681,7 @@
 						</div>
 					</div>
 					<div class="single-client wow fadeInUp" data-wow-delay="1.7s">
-						<img class="img-fluid rounded-circle" src="img/client/client-3.png" alt="cleint">
+						<img class="img-fluid rounded-circle" src="{{ url_for('static', filename='img/client/client-3.png') }}" alt="cleint">
 						<p class="quote">Assertively procrastinate distributed relationships whereas equity invested
 							intellectual capital
 							everything</p>
@@ -704,7 +704,7 @@
 				<!-- call to action area -->
 				<div class="row pt-110">
 					<div class="col-md-12 position-relative">
-						<div class="cta cta-2" style="background-image: url(img/client/cta-bg.png);">
+						<div class="cta cta-2" style="background-image: url('{{ url_for('static', filename='\1') }}');">
 							<div class="bubbles">
 								<div class="bubble-1"></div>
 								<div class="bubble-2"></div>
@@ -759,7 +759,7 @@
 
 				<div class="news-slider  pt-30 ">
 					<div class="blog-widget-1 wow fadeInUp" data-wow-delay="0.1s">
-						<img class="w-sm-auto w-100" src="img/blog/news-1.png" alt="news image">
+						<img class="w-sm-auto w-100" src="{{ url_for('static', filename='img/blog/news-1.png') }}" alt="news image">
 
 						<div class="blog-content pr-20 pl-20">
 							<h4><a href="#">What credit limit should I request?</a></h4>
@@ -771,7 +771,7 @@
 						</div>
 					</div>
 					<div class="blog-widget-1 wow fadeInUp" data-wow-delay="0.3s">
-						<img class="w-sm-auto w-100" src="img/blog/news-2.png" alt="news image">
+						<img class="w-sm-auto w-100" src="{{ url_for('static', filename='img/blog/news-2.png') }}" alt="news image">
 
 						<div class="blog-content pr-20 pl-20">
 							<h4><a href="#">Which bank account should I open</a></h4>
@@ -783,7 +783,7 @@
 						</div>
 					</div>
 					<div class="blog-widget-1 wow fadeInUp" data-wow-delay="0.5s">
-						<img class="w-sm-auto w-100" src="img/blog/news-3.png" alt="news image">
+						<img class="w-sm-auto w-100" src="{{ url_for('static', filename='img/blog/news-3.png') }}" alt="news image">
 
 						<div class="blog-content pr-20 pl-20">
 							<h4><a href="#">Banking Basics: get to know your bank account</a></h4>
@@ -795,7 +795,7 @@
 						</div>
 					</div>
 					<div class="blog-widget-1 wow fadeInUp" data-wow-delay="0.7s">
-						<img class="w-sm-auto w-100" src="img/blog/news-1.png" alt="news image">
+						<img class="w-sm-auto w-100" src="{{ url_for('static', filename='img/blog/news-1.png') }}" alt="news image">
 
 						<div class="blog-content pr-20 pl-20">
 							<h4><a href="#">What credit limit should I request?</a></h4>
@@ -807,7 +807,7 @@
 						</div>
 					</div>
 					<div class="blog-widget-1 wow fadeInUp" data-wow-delay="0.9s">
-						<img class="w-sm-auto w-100" src="img/blog/news-2.png" alt="news image">
+						<img class="w-sm-auto w-100" src="{{ url_for('static', filename='img/blog/news-2.png') }}" alt="news image">
 
 						<div class="blog-content pr-20 pl-20">
 							<h4><a href="#">Which bank account should I open</a></h4>
@@ -819,7 +819,7 @@
 						</div>
 					</div>
 					<div class="blog-widget-1 wow fadeInUp" data-wow-delay="1.1s">
-						<img class="w-sm-auto w-100" src="img/blog/news-3.png" alt="news image">
+						<img class="w-sm-auto w-100" src="{{ url_for('static', filename='img/blog/news-3.png') }}" alt="news image">
 
 						<div class="blog-content pr-20 pl-20">
 							<h4><a href="#">Banking Basics: get to know your bank account</a></h4>
@@ -831,7 +831,7 @@
 						</div>
 					</div>
 					<div class="blog-widget-1 wow fadeInUp" data-wow-delay="1.3s">
-						<img class="w-sm-auto w-100" src="img/blog/news-1.png" alt="news image">
+						<img class="w-sm-auto w-100" src="{{ url_for('static', filename='img/blog/news-1.png') }}" alt="news image">
 
 						<div class="blog-content pr-20 pl-20">
 							<h4><a href="#">What credit limit should I request?</a></h4>
@@ -843,7 +843,7 @@
 						</div>
 					</div>
 					<div class="blog-widget-1 wow fadeInUp" data-wow-delay="1.5s">
-						<img class="w-sm-auto w-100" src="img/blog/news-2.png" alt="news image">
+						<img class="w-sm-auto w-100" src="{{ url_for('static', filename='img/blog/news-2.png') }}" alt="news image">
 
 						<div class="blog-content pr-20 pl-20">
 							<h4><a href="#">Which bank account should I open</a></h4>
@@ -855,7 +855,7 @@
 						</div>
 					</div>
 					<div class="blog-widget-1 wow fadeInUp" data-wow-delay="1.7s">
-						<img class="w-sm-auto w-100" src="img/blog/news-3.png" alt="news image">
+						<img class="w-sm-auto w-100" src="{{ url_for('static', filename='img/blog/news-3.png') }}" alt="news image">
 
 						<div class="blog-content pr-20 pl-20">
 							<h4><a href="#">Banking Basics: get to know your bank account</a></h4>
@@ -882,7 +882,7 @@
 					<div class="col-xl-4 col-lg-3 col-6 pr-lg-90">
 						<div class="footer-widget mb-30 wow fadeInLeft">
 							<div class="flog mb-35">
-								<a href="index.html"><img src="img/logo/Logo.png" alt="logo"></a>
+								<a href="index.html"><img src="{{ url_for('static', filename='img/logo/Logo.png') }}" alt="logo"></a>
 							</div>
 							<div class="footer-text mb-20">
 								<p>Follow us on social media to find out the latest updates on our progress.</p>
@@ -981,19 +981,19 @@
 	<a id="back-to-top" title="Back to Top"></a>
 
 	<!-- JS here -->
-	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-	<script type="text/javascript" src="js/preloader.js"></script>
-	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-	<script type="text/javascript" src="js/jquery.smoothscroll.min.js"></script>
-	<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
-	<script type="text/javascript" src="js/jquery.counterup.min.js"></script>
-	<script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
-	<script type="text/javascript" src="js/slick.min.js"></script>
-	<script type="text/javascript" src="js/parallax.js"></script>
-	<script type="text/javascript" src="js/jquery.parallax-scroll.js"></script>
-	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.6.0.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/preloader.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.smoothscroll.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.waypoints.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.nice-select.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/slick.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/parallax.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.parallax-scroll.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
 	<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/custom.js') }}"></script>
 </body>
 
 </html>

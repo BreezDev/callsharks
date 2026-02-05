@@ -6,17 +6,17 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Banca - Banking & Business Loan Bootstrap-5 HTML Template</title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}" type="image/x-icon">
 
     <!-- CSS here -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/elegant-icons.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/all.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/nice-select.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/default.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/elegant-icons.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/all.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/nice-select.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/default.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive.css') }}" media="all" />
 </head>
 
 <body>
@@ -26,7 +26,7 @@
             <div class="round_spinner">
                 <div class="spinner"></div>
                 <div class="text">
-                    <img src="img/logo/Logo-2.png" alt="">
+                    <img src="{{ url_for('static', filename='img/logo/Logo-2.png') }}" alt="">
                 </div>
             </div>
             <h2 class="head">Did You Know?</h2>
@@ -58,7 +58,7 @@
                         <div class="header-info-right">
                             <ul>
                                 <li>
-                                    <img class="img-fluid" src="img/phone-outline.png" alt="phone"><a
+                                    <img class="img-fluid" src="{{ url_for('static', filename='img/phone-outline.png') }}" alt="phone"><a
                                         href="tel:01234567890">+01234-567890</a>
                                 </li>
 
@@ -76,8 +76,8 @@
             <nav class="navbar navbar-expand-lg ">
                 <div class="container">
                     <a class="navbar-brand sticky_logo" href="index.html">
-                        <img class="main" src="img/logo/Logo.png" srcset="img/logo/Logo@2x.png 2x" alt="logo">
-                        <img class="sticky" src="img/logo/Logo-2.png" srcset="img/logo/Logo-2@2x.png 2x" alt="logo">
+                        <img class="main" src="{{ url_for('static', filename='img/logo/Logo.png') }}" srcset="{{ url_for('static', filename='img/logo/Logo@2x.png') }} 2x" alt="logo">
+                        <img class="sticky" src="{{ url_for('static', filename='img/logo/Logo-2.png') }}" srcset="{{ url_for('static', filename='img/logo/Logo-2@2x.png') }} 2x" alt="logo">
                     </a>
                     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -221,14 +221,14 @@
         <!-- BreadCrumb start-->
         <section class="breadcrumb-area" id="banner_animation2">
             <div class="breadcrumb-widget breadcrumb-widget-2  pt-200 pb-145"
-                style="background-image: url(img/breadcrumb/bg-3.jpg);">
+                style="background-image: url('{{ url_for('static', filename='\1') }}');">
 
                 <div class="shapes">
                     <div class="one-shape shape-3" data-parallax='{"x": -100, "y": 0, "rotateZ":0}'>
-                        <img src="img/breadcrumb/Polygon-3.png" alt="shape">
+                        <img src="{{ url_for('static', filename='img/breadcrumb/Polygon-3.png') }}" alt="shape">
                     </div>
                     <div class="one-shape shape-4" data-parallax='{"x": -200, "y": 0, "rotateZ":0}'>
-                        <img src="img/breadcrumb/Polygon-4.png" alt="shape">
+                        <img src="{{ url_for('static', filename='img/breadcrumb/Polygon-4.png') }}" alt="shape">
                     </div>
                 </div>
                 <div class="container">
@@ -238,11 +238,11 @@
                                 <h1>How To Save Enough Money To Buy A Home</h1>
                                 <div class="post-info mt-5">
                                     <div class="autor mr-20">
-                                        <img src="img/blog/user-profile.png" alt="icon">
+                                        <img src="{{ url_for('static', filename='img/blog/user-profile.png') }}" alt="icon">
                                         <span>Zain Siphron</span>
                                     </div>
                                     <div class="date">
-                                        <img src="img/blog/calendar-outline.png" alt="icon">
+                                        <img src="{{ url_for('static', filename='img/blog/calendar-outline.png') }}" alt="icon">
                                         <span>March 18, 2021</span>
                                     </div>
                                 </div>
@@ -275,7 +275,7 @@
                     <div class="col-lg-7">
 
                         <div class="post-details-widget pb-70 border-bottom position-relative">
-                            <img class="post-img w-100" src="img/blog/blog-details-img.jpg" alt="post image">
+                            <img class="post-img w-100" src="{{ url_for('static', filename='img/blog/blog-details-img.jpg') }}" alt="post image">
 
                             <p class="post-text mt-35">Tomfoolery crikey bits and bobs brilliant bamboozled down the pub
                                 amongst brolly hanky panky, cack bonnet arse over tit burke bugger all mate bodge fanny
@@ -302,14 +302,14 @@
                                     lavatory cup of char cor blimey guvnor get stuffed mate you mug cobblers off his nut
                                     pukka</p>
                                 <div class="author">
-                                    <img class="img-fluid rounded-circle" src="img/blog/quote-author.png" alt="">
+                                    <img class="img-fluid rounded-circle" src="{{ url_for('static', filename='img/blog/quote-author.png') }}" alt="">
                                     <div>
                                         <h6>Jesus Requena </h6>
                                         <span>Support Engineer, Aliexpress</span>
                                     </div>
                                 </div>
                             </blockquote>
-                            <img class="post-img w-100" src="img/blog/blog-details-img-2.jpg" alt="post img">
+                            <img class="post-img w-100" src="{{ url_for('static', filename='img/blog/blog-details-img-2.jpg') }}" alt="post img">
                             <p class="post-text mt-40 pb-2">He legged it that blatant brown bread some dodgy chav super
                                 a blinding
                                 shot my lady lavatory cup of char cor blimey guvnor get stuffed mate you mug cobblers
@@ -336,7 +336,7 @@
                         </div>
                         <div class="author-media-widget mt-90 mb-90">
                             <div class="author-img">
-                                <img class="rounded-circle" src="img/blog/author-1.png" alt="author">
+                                <img class="rounded-circle" src="{{ url_for('static', filename='img/blog/author-1.png') }}" alt="author">
                             </div>
                             <div class="author-info">
                                 <h6>Ahmad Bator</h6>
@@ -351,7 +351,7 @@
                                 <div class="col-md-6">
                                     <div class="blog-widget-2 wow fadeInUp" data-wow-delay="0.1s">
                                         <div class="blog-img">
-                                            <img src="img/blog/blog-9.png" alt="blog-img">
+                                            <img src="{{ url_for('static', filename='img/blog/blog-9.png') }}" alt="blog-img">
                                             <div class="catagory bg_primary">buisiness</div>
                                         </div>
                                         <div class="blog-content">
@@ -359,11 +359,11 @@
                                             <p>Cup of char brilliant horse play bro bread sloshed lavatory only...</p>
                                             <div class="post-info">
                                                 <div class="author">
-                                                    <img src="img/blog/user-profile.svg" alt="user profile">
+                                                    <img src="{{ url_for('static', filename='img/blog/user-profile.svg') }}" alt="user profile">
                                                     <span>Zain Siphron</span>
                                                 </div>
                                                 <div class="post-date">
-                                                    <img src="img/blog/calendar-outline.svg" alt="calendar">
+                                                    <img src="{{ url_for('static', filename='img/blog/calendar-outline.svg') }}" alt="calendar">
                                                     <span>March 18, 2021</span>
                                                 </div>
                                             </div>
@@ -373,7 +373,7 @@
                                 <div class="col-md-6">
                                     <div class="blog-widget-2 wow fadeInUp" data-wow-delay="0.3s">
                                         <div class="blog-img">
-                                            <img src="img/blog/blog-7.png" alt="blog-img">
+                                            <img src="{{ url_for('static', filename='img/blog/blog-7.png') }}" alt="blog-img">
                                             <div class="catagory bg_primary">buisiness</div>
                                         </div>
                                         <div class="blog-content">
@@ -381,11 +381,11 @@
                                             <p>Cup of char brilliant horse play bro bread sloshed lavatory only...</p>
                                             <div class="post-info">
                                                 <div class="author">
-                                                    <img src="img/blog/user-profile.svg" alt="user profile">
+                                                    <img src="{{ url_for('static', filename='img/blog/user-profile.svg') }}" alt="user profile">
                                                     <span>Zain Siphron</span>
                                                 </div>
                                                 <div class="post-date">
-                                                    <img src="img/blog/calendar-outline.svg" alt="calendar">
+                                                    <img src="{{ url_for('static', filename='img/blog/calendar-outline.svg') }}" alt="calendar">
                                                     <span>March 18, 2021</span>
                                                 </div>
                                             </div>
@@ -403,13 +403,13 @@
                                     <li>
                                         <div class="comments-box">
                                             <div class="comments-avatar">
-                                                <img class="rounded-circle" src="img/blog/comment-1.png" alt="img">
+                                                <img class="rounded-circle" src="{{ url_for('static', filename='img/blog/comment-1.png') }}" alt="img">
                                             </div>
                                             <div class="comments-text">
                                                 <div class="avatar-name">
                                                     <h5>Karon Balina</h5>
                                                     <div class="post-date">
-                                                        <img src="img/blog/calendar-outline.svg" alt="">
+                                                        <img src="{{ url_for('static', filename='img/blog/calendar-outline.svg') }}" alt="">
                                                         <span>March 18, 2021</span>
                                                     </div>
                                                     <a class="reply" href="#">Reply <i class="arrow_right"></i></a>
@@ -424,13 +424,13 @@
                                     <li class="children">
                                         <div class="comments-box">
                                             <div class="comments-avatar">
-                                                <img class="rounded-circle" src="img/blog/comment-2.png" alt="img">
+                                                <img class="rounded-circle" src="{{ url_for('static', filename='img/blog/comment-2.png') }}" alt="img">
                                             </div>
                                             <div class="comments-text">
                                                 <div class="avatar-name">
                                                     <h5>Julias Roy</h5>
                                                     <div class="post-date">
-                                                        <img src="img/blog/calendar-outline.svg" alt="">
+                                                        <img src="{{ url_for('static', filename='img/blog/calendar-outline.svg') }}" alt="">
                                                         <span>March 18, 2021</span>
                                                     </div>
                                                     <a class="reply" href="#">Reply <i class="arrow_right"></i></a>
@@ -443,13 +443,13 @@
                                     <li>
                                         <div class="comments-box">
                                             <div class="comments-avatar">
-                                                <img class="rounded-circle" src="img/blog/comment-3.png" alt="img">
+                                                <img class="rounded-circle" src="{{ url_for('static', filename='img/blog/comment-3.png') }}" alt="img">
                                             </div>
                                             <div class="comments-text">
                                                 <div class="avatar-name">
                                                     <h5>Arista Williamson</h5>
                                                     <div class="post-date">
-                                                        <img src="img/blog/calendar-outline.svg" alt="">
+                                                        <img src="{{ url_for('static', filename='img/blog/calendar-outline.svg') }}" alt="">
                                                         <span>March 18, 2021</span>
                                                     </div>
                                                     <a class="reply" href="#">Reply <i class="arrow_right"></i></a>
@@ -530,21 +530,21 @@
                                 <div class="row text-center gx-3 gy-3 gy-md-0">
                                     <div class="col-md-4">
                                         <a href="#">
-                                            <img src="img/social/facebook-logo.svg" alt="faceebook">
+                                            <img src="{{ url_for('static', filename='img/social/facebook-logo.svg') }}" alt="faceebook">
                                             <h6>815.5K</h6>
                                             <span>Fans</span>
                                         </a>
                                     </div>
                                     <div class="col-md-4">
                                         <a href="#">
-                                            <img src="img/social/twitter.svg" alt="twitter">
+                                            <img src="{{ url_for('static', filename='img/social/twitter.svg') }}" alt="twitter">
                                             <h6>107.2K</h6>
                                             <span>Followers</span>
                                         </a>
                                     </div>
                                     <div class="col-md-4">
                                         <a href="#">
-                                            <img src="img/social/youtube.svg" alt="youtube">
+                                            <img src="{{ url_for('static', filename='img/social/youtube.svg') }}" alt="youtube">
                                             <h6>90.6K</h6>
                                             <span>Subscribers</span>
                                         </a>
@@ -571,41 +571,41 @@
 
                                 <ul class="recent-post">
                                     <li>
-                                        <img src="img/blog/recent-post-1.png" alt="recent-post">
+                                        <img src="{{ url_for('static', filename='img/blog/recent-post-1.png') }}" alt="recent-post">
                                         <div class="news-content">
                                             <h6><a href="#">Is It Worth Buying A Premium Form Builder.</a></h6>
                                             <div class="post-date">
-                                                <img src="img/blog/calendar-outline.svg" alt="calender">
+                                                <img src="{{ url_for('static', filename='img/blog/calendar-outline.svg') }}" alt="calender">
                                                 <span>March 18, 2021</span>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
-                                        <img src="img/blog/recent-post-2.png" alt="recent-post">
+                                        <img src="{{ url_for('static', filename='img/blog/recent-post-2.png') }}" alt="recent-post">
                                         <div class="news-content">
                                             <h6><a href="#">10 Classic Summer Vacations</a></h6>
                                             <div class="post-date">
-                                                <img src="img/blog/calendar-outline.svg" alt="calender">
+                                                <img src="{{ url_for('static', filename='img/blog/calendar-outline.svg') }}" alt="calender">
                                                 <span>March 18, 2021</span>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
-                                        <img src="img/blog/recent-post-3.png" alt="recent-post">
+                                        <img src="{{ url_for('static', filename='img/blog/recent-post-3.png') }}" alt="recent-post">
                                         <div class="news-content">
                                             <h6><a href="#">How To Easily Add weForms Widget Using Elementor</a></h6>
                                             <div class="post-date">
-                                                <img src="img/blog/calendar-outline.svg" alt="calender">
+                                                <img src="{{ url_for('static', filename='img/blog/calendar-outline.svg') }}" alt="calender">
                                                 <span>March 18, 2021</span>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
-                                        <img src="img/blog/recent-post-4.png" alt="recent-post">
+                                        <img src="{{ url_for('static', filename='img/blog/recent-post-4.png') }}" alt="recent-post">
                                         <div class="news-content">
                                             <h6><a href="#">How to Create GDPR Consent Form In WordPress</a></h6>
                                             <div class="post-date">
-                                                <img src="img/blog/calendar-outline.svg" alt="calender">
+                                                <img src="{{ url_for('static', filename='img/blog/calendar-outline.svg') }}" alt="calender">
                                                 <span>March 18, 2021</span>
                                             </div>
                                         </div>
@@ -718,7 +718,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-3 text-center text-lg-start">
-                        <a href="index.html" class="p-0 m-0"><img src="img/logo/Logo.png" alt="logo"></a>
+                        <a href="index.html" class="p-0 m-0"><img src="{{ url_for('static', filename='img/logo/Logo.png') }}" alt="logo"></a>
                     </div>
                     <div class="col-lg-5 text-center my-3 my-sm-0">
                         <div class="copyright-text">
@@ -747,18 +747,18 @@
     <a id="back-to-top" title="Back to Top"></a>
 
     <!-- JS here -->
-    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="js/preloader.js"></script>
-    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="js/jquery.smoothscroll.min.js"></script>
-    <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
-    <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
-    <script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
-    <script type="text/javascript" src="js/parallax.js"></script>
-    <script type="text/javascript" src="js/jquery.parallax-scroll.js"></script>
-    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.6.0.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/preloader.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.smoothscroll.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.waypoints.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.nice-select.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/parallax.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.parallax-scroll.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/custom.js') }}"></script>
 </body>
 
 </html>

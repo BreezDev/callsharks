@@ -6,20 +6,20 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Banca - Banking & Business Loan Bootstrap-5 HTML Template</title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}" type="image/x-icon">
 
     <!-- CSS here -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/elegant-icons.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/all.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/slick.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/nice-select.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/default.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/elegant-icons.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/all.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/slick.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/slick-theme.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/nice-select.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/default.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive.css') }}" media="all" />
 </head>
 
 <body>
@@ -29,7 +29,7 @@
             <div class="round_spinner">
                 <div class="spinner"></div>
                 <div class="text">
-                    <img src="img/logo/Logo-2.png" alt="">
+                    <img src="{{ url_for('static', filename='img/logo/Logo-2.png') }}" alt="">
                 </div>
             </div>
             <h2 class="head">Did You Know?</h2>
@@ -42,8 +42,8 @@
             <nav class="navbar navbar-expand-lg ">
                 <div class="container">
                     <a class="navbar-brand sticky_logo" href="index.html">
-                        <img class="main" src="img/logo/Logo.png" srcset="img/logo/Logo@2x.png 2x" alt="logo">
-                        <img class="sticky" src="img/logo/Logo-2.png" srcset="img/logo/Logo-2@2x.png 2x" alt="logo">
+                        <img class="main" src="{{ url_for('static', filename='img/logo/Logo.png') }}" srcset="{{ url_for('static', filename='img/logo/Logo@2x.png') }} 2x" alt="logo">
+                        <img class="sticky" src="{{ url_for('static', filename='img/logo/Logo-2.png') }}" srcset="{{ url_for('static', filename='img/logo/Logo-2@2x.png') }} 2x" alt="logo">
                     </a>
                     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -186,17 +186,17 @@
         <section class="banner-area-5" id="banner_animation">
             <div class="bg-shapes">
                 <div class="shape" data-parallax='{ "x": -30,"y": 90,"rotateZ":50}'>
-                    <img class="layer" data-depth="-0.06" src="img/home-4/shape-2.png" alt="">
+                    <img class="layer" data-depth="-0.06" src="{{ url_for('static', filename='img/home-4/shape-2.png') }}" alt="">
                 </div>
                 <div class="shape" data-parallax='{ "y": -250}'>
-                    <img class="layer" data-depth="-0.15" src="img/home-4/shape-3.png" alt="">
+                    <img class="layer" data-depth="-0.15" src="{{ url_for('static', filename='img/home-4/shape-3.png') }}" alt="">
                 </div>
                 <div class="shape" data-parallax='{"x": -40, "y": -150}'>
-                    <img class="layer" data-depth="-0.3" src="img/home-4/shape-4.png" alt="">
+                    <img class="layer" data-depth="-0.3" src="{{ url_for('static', filename='img/home-4/shape-4.png') }}" alt="">
 
                 </div>
                 <div class="shape" data-parallax='{"x": 300, "y": 370, "rotateZ":200}'>
-                    <img class="layer" data-depth="0.5" src="img/home-4/shape-5.png" alt="">
+                    <img class="layer" data-depth="0.5" src="{{ url_for('static', filename='img/home-4/shape-5.png') }}" alt="">
                 </div>
 
                 <div class="shape"></div>
@@ -220,16 +220,16 @@
                             <div class="co-operators">
                                 <p class="mb-4">We are cooperating with:</p>
                                 <div class="d-flex flex-wrap">
-                                    <a href="#"><img src="img/home-4/cooperator-1.png" alt=""></a>
-                                    <a href="#"><img src="img/home-4/cooperator-2.png" alt=""></a>
-                                    <a href="#"><img src="img/home-4/cooperator-3.png" alt=""></a>
+                                    <a href="#"><img src="{{ url_for('static', filename='img/home-4/cooperator-1.png') }}" alt=""></a>
+                                    <a href="#"><img src="{{ url_for('static', filename='img/home-4/cooperator-2.png') }}" alt=""></a>
+                                    <a href="#"><img src="{{ url_for('static', filename='img/home-4/cooperator-3.png') }}" alt=""></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="basic-loan-calculator wow fadeInLeft" data-wow-delay="0.1s">
-                            <img class="shape" src="img/home-4/shape-1.png" alt="">
+                            <img class="shape" src="{{ url_for('static', filename='img/home-4/shape-1.png') }}" alt="">
                             <h4>Loan calculator</h4>
                             <form action="" class="d-flex flex-column">
                                 <div class="mb-3">
@@ -290,7 +290,7 @@
                     <div class="col-xl-4 col-md-6">
                         <div class="feature-card-widget-8 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="card-img">
-                                <img src="img/home-4/step-icon-01.svg" alt="feature svg">
+                                <img src="{{ url_for('static', filename='img/home-4/step-icon-01.svg') }}" alt="feature svg">
                             </div>
                             <h4>Apply for loan</h4>
                             <p>Quis dapibus volutpat condimentum
@@ -301,7 +301,7 @@
                     <div class="col-xl-4 col-md-6">
                         <div class="feature-card-widget-8 wow fadeInUp" data-wow-delay="0.3s">
                             <div class="card-img">
-                                <img src="img/home-4/step-icon-02.svg" alt="feature svg">
+                                <img src="{{ url_for('static', filename='img/home-4/step-icon-02.svg') }}" alt="feature svg">
                             </div>
                             <h4>Get approved</h4>
                             <p>Quis dapibus volutpat condimentum
@@ -312,7 +312,7 @@
                     <div class="col-xl-4 col-md-6 mx-auto">
                         <div class="feature-card-widget-8 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="card-img">
-                                <img src="img/home-4/step-icon-03.svg" alt="feature svg">
+                                <img src="{{ url_for('static', filename='img/home-4/step-icon-03.svg') }}" alt="feature svg">
                             </div>
                             <h4>Get your money</h4>
                             <p>Quis dapibus volutpat condimentum
@@ -330,10 +330,10 @@
                 <div class="row align-items-center">
                     <div class="col-lg-7">
                         <div class="cash-img">
-                            <img class="img-fluid" src="img/home-4/manage-cash-img.png" alt="">
-                            <img class="msg-1 wow fadeInRight" data-wow-delay="0.1s" src="img/home-4/basic-info-2.png"
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/home-4/manage-cash-img.png') }}" alt="">
+                            <img class="msg-1 wow fadeInRight" data-wow-delay="0.1s" src="{{ url_for('static', filename='img/home-4/basic-info-2.png') }}"
                                 alt="">
-                            <img class="msg-2 wow fadeInRight" data-wow-delay="0.3s" src="img/home-4/basic-info-3.png"
+                            <img class="msg-2 wow fadeInRight" data-wow-delay="0.3s" src="{{ url_for('static', filename='img/home-4/basic-info-3.png') }}"
                                 alt="">
                         </div>
 
@@ -397,7 +397,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-7">
-                                <img class="img-fluid" src="img/home-4/freelance-tab.png" alt="">
+                                <img class="img-fluid" src="{{ url_for('static', filename='img/home-4/freelance-tab.png') }}" alt="">
                             </div>
                         </div>
                     </div>
@@ -414,7 +414,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-7">
-                                <img class="img-fluid" src="img/home-4/freelance-tab-2.png" alt="">
+                                <img class="img-fluid" src="{{ url_for('static', filename='img/home-4/freelance-tab-2.png') }}" alt="">
                             </div>
                         </div>
                     </div>
@@ -431,7 +431,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-7">
-                                <img class="img-fluid" src="img/home-4/freelance-tab.png" alt="">
+                                <img class="img-fluid" src="{{ url_for('static', filename='img/home-4/freelance-tab.png') }}" alt="">
                             </div>
                         </div>
                     </div>
@@ -448,7 +448,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-7">
-                                <img class="img-fluid" src="img/home-4/freelance-tab-2.png" alt="">
+                                <img class="img-fluid" src="{{ url_for('static', filename='img/home-4/freelance-tab-2.png') }}" alt="">
                             </div>
                         </div>
                     </div>
@@ -462,7 +462,7 @@
             <div class="container">
                 <div class="row gy-lg-0 gy-4">
                     <div class="col-lg-6">
-                        <img class="faq-img img-fluid" src="img/home-4/faq-Img.png" alt="">
+                        <img class="faq-img img-fluid" src="{{ url_for('static', filename='img/home-4/faq-Img.png') }}" alt="">
                     </div>
                     <div class="col-lg-6 pl-lg-50">
                         <span class="subtitle">_FAQ</span>
@@ -584,7 +584,7 @@
                         <thead>
                             <tr>
                                 <th class="feature-head" scope="col"></th>
-                                <th class="text-center" scope="col"><img src="img/logo/Logo-2.png" alt=""></th>
+                                <th class="text-center" scope="col"><img src="{{ url_for('static', filename='img/logo/Logo-2.png') }}" alt=""></th>
                                 <th class="text-center" scope="col">Other Companies</th>
                             </tr>
                         </thead>
@@ -679,7 +679,7 @@
                             everything</p>
 
                         <div class="client-info">
-                            <img class="img-fluid rounded-circle" src="img/home-4/client-rev-1.png" alt="cleint">
+                            <img class="img-fluid rounded-circle" src="{{ url_for('static', filename='img/home-4/client-rev-1.png') }}" alt="cleint">
 
                             <div>
                                 <p>Gerry Kellmen</p>
@@ -700,7 +700,7 @@
                             everything</p>
 
                         <div class="client-info">
-                            <img class="img-fluid rounded-circle" src="img/home-4/client-rev-2.png" alt="cleint">
+                            <img class="img-fluid rounded-circle" src="{{ url_for('static', filename='img/home-4/client-rev-2.png') }}" alt="cleint">
 
                             <div>
                                 <p>Gerry Kellmen</p>
@@ -721,7 +721,7 @@
                             everything</p>
 
                         <div class="client-info">
-                            <img class="img-fluid rounded-circle" src="img/home-4/client-rev-3.png" alt="cleint">
+                            <img class="img-fluid rounded-circle" src="{{ url_for('static', filename='img/home-4/client-rev-3.png') }}" alt="cleint">
 
                             <div>
                                 <p>Gerry Kellmen</p>
@@ -742,7 +742,7 @@
                             everything</p>
 
                         <div class="client-info">
-                            <img class="img-fluid rounded-circle" src="img/home-4/client-rev-1.png" alt="cleint">
+                            <img class="img-fluid rounded-circle" src="{{ url_for('static', filename='img/home-4/client-rev-1.png') }}" alt="cleint">
 
                             <div>
                                 <p>Gerry Kellmen</p>
@@ -763,7 +763,7 @@
                             everything</p>
 
                         <div class="client-info">
-                            <img class="img-fluid rounded-circle" src="img/home-4/client-rev-2.png" alt="cleint">
+                            <img class="img-fluid rounded-circle" src="{{ url_for('static', filename='img/home-4/client-rev-2.png') }}" alt="cleint">
 
                             <div>
                                 <p>Gerry Kellmen</p>
@@ -784,7 +784,7 @@
                             everything</p>
 
                         <div class="client-info">
-                            <img class="img-fluid rounded-circle" src="img/home-4/client-rev-3.png" alt="cleint">
+                            <img class="img-fluid rounded-circle" src="{{ url_for('static', filename='img/home-4/client-rev-3.png') }}" alt="cleint">
 
                             <div>
                                 <p>Gerry Kellmen</p>
@@ -805,7 +805,7 @@
                             everything</p>
 
                         <div class="client-info">
-                            <img class="img-fluid rounded-circle" src="img/home-4/client-rev-1.png" alt="cleint">
+                            <img class="img-fluid rounded-circle" src="{{ url_for('static', filename='img/home-4/client-rev-1.png') }}" alt="cleint">
 
                             <div>
                                 <p>Gerry Kellmen</p>
@@ -826,7 +826,7 @@
                             everything</p>
 
                         <div class="client-info">
-                            <img class="img-fluid rounded-circle" src="img/home-4/client-rev-2.png" alt="cleint">
+                            <img class="img-fluid rounded-circle" src="{{ url_for('static', filename='img/home-4/client-rev-2.png') }}" alt="cleint">
 
                             <div>
                                 <p>Gerry Kellmen</p>
@@ -847,7 +847,7 @@
                             everything</p>
 
                         <div class="client-info">
-                            <img class="img-fluid rounded-circle" src="img/home-4/client-rev-3.png" alt="cleint">
+                            <img class="img-fluid rounded-circle" src="{{ url_for('static', filename='img/home-4/client-rev-3.png') }}" alt="cleint">
 
                             <div>
                                 <p>Gerry Kellmen</p>
@@ -874,7 +874,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="blog-widget-3 wow fadeInUp" data-wow-delay="0.1s">
                             <a href="#" class="blog-img d-block">
-                                <img src="img/home-4/article-1.png" alt="blog-img">
+                                <img src="{{ url_for('static', filename='img/home-4/article-1.png') }}" alt="blog-img">
                                 <div class="catagory yellow-bg">Design</div>
                             </a>
                             <div class="blog-content">
@@ -882,11 +882,11 @@
                                         it can run on it’s own </a></h4>
                                 <div class="post-info">
                                     <div class="post-date">
-                                        <img src="img/home-4/calender-outline.svg" alt="calendar">
+                                        <img src="{{ url_for('static', filename='img/home-4/calender-outline.svg') }}" alt="calendar">
                                         <span>November 08, 2022</span>
                                     </div>
                                     <div class="author">
-                                        <img src="img/home-4/user-profile.svg" alt="user profile">
+                                        <img src="{{ url_for('static', filename='img/home-4/user-profile.svg') }}" alt="user profile">
                                         <span>Spiderthemes</span>
                                     </div>
                                 </div>
@@ -897,7 +897,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="blog-widget-3 wow fadeInUp" data-wow-delay="0.3s">
                             <a href="#" class="blog-img d-block">
-                                <img src="img/home-4/article-2.png" alt="blog-img">
+                                <img src="{{ url_for('static', filename='img/home-4/article-2.png') }}" alt="blog-img">
                                 <div class="catagory orange-bg">Design</div>
                             </a>
                             <div class="blog-content">
@@ -905,11 +905,11 @@
                                         it can run on it’s own </a></h4>
                                 <div class="post-info">
                                     <div class="post-date">
-                                        <img src="img/home-4/calender-outline.svg" alt="calendar">
+                                        <img src="{{ url_for('static', filename='img/home-4/calender-outline.svg') }}" alt="calendar">
                                         <span>November 08, 2022</span>
                                     </div>
                                     <div class="author">
-                                        <img src="img/home-4/user-profile.svg" alt="user profile">
+                                        <img src="{{ url_for('static', filename='img/home-4/user-profile.svg') }}" alt="user profile">
                                         <span>Spiderthemes</span>
                                     </div>
                                 </div>
@@ -920,7 +920,7 @@
                     <div class="col-lg-4 col-md-6 mx-auto">
                         <div class="blog-widget-3 wow fadeInUp" data-wow-delay="0.5s">
                             <a href="#" class="blog-img d-block">
-                                <img src="img/home-4/article-3.png" alt="blog-img">
+                                <img src="{{ url_for('static', filename='img/home-4/article-3.png') }}" alt="blog-img">
                                 <div class="catagory tulip-bg">Design</div>
                             </a>
                             <div class="blog-content">
@@ -928,11 +928,11 @@
                                         it can run on it’s own </a></h4>
                                 <div class="post-info">
                                     <div class="post-date">
-                                        <img src="img/home-4/calender-outline.svg" alt="calendar">
+                                        <img src="{{ url_for('static', filename='img/home-4/calender-outline.svg') }}" alt="calendar">
                                         <span>November 08, 2022</span>
                                     </div>
                                     <div class="author">
-                                        <img src="img/home-4/user-profile.svg" alt="user profile">
+                                        <img src="{{ url_for('static', filename='img/home-4/user-profile.svg') }}" alt="user profile">
                                         <span>Spiderthemes</span>
                                     </div>
                                 </div>
@@ -967,8 +967,8 @@
                                 </div>
 
                                 <div class="col-lg-6">
-                                    <img class="cta-img wow fadeInUp img-fluid" src="img/home-4/cta-Img.png" alt="">
-                                    <img class="shape img-fluid" src="img/home-4/cta-shape.png" alt="">
+                                    <img class="cta-img wow fadeInUp img-fluid" src="{{ url_for('static', filename='img/home-4/cta-Img.png') }}" alt="">
+                                    <img class="shape img-fluid" src="{{ url_for('static', filename='img/home-4/cta-shape.png') }}" alt="">
                                 </div>
                             </div>
                         </div>
@@ -1057,7 +1057,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-3 text-center text-lg-start">
-                        <a href="index.html" class="p-0 m-0"><img src="img/logo/Logo.png" alt="logo"></a>
+                        <a href="index.html" class="p-0 m-0"><img src="{{ url_for('static', filename='img/logo/Logo.png') }}" alt="logo"></a>
                     </div>
                     <div class="col-lg-5 text-center my-3 my-sm-0">
                         <div class="copyright-text">
@@ -1086,19 +1086,19 @@
     <a id="back-to-top" title="Back to Top"></a>
 
     <!-- JS here -->
-    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="js/preloader.js"></script>
-    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="js/jquery.smoothscroll.min.js"></script>
-    <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
-    <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
-    <script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script type="text/javascript" src="js/parallax.js"></script>
-    <script type="text/javascript" src="js/jquery.parallax-scroll.js"></script>
-    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.6.0.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/preloader.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.smoothscroll.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.waypoints.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.nice-select.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/slick.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/parallax.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.parallax-scroll.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/custom.js') }}"></script>
 </body>
 
 </html>
