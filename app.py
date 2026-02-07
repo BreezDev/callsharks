@@ -11,8 +11,6 @@ DATABASE = DATA_DIR / "callsharks.db"
 
 app = Flask(__name__, template_folder=str(BASE_DIR), static_folder=str(BASE_DIR))
 
-init_db()
-
 
 def init_db() -> None:
     DATA_DIR.mkdir(exist_ok=True)
@@ -58,6 +56,8 @@ def init_db() -> None:
             )
             """
         )
+
+init_db()
 
 
 def get_db_connection() -> sqlite3.Connection:
