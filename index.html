@@ -80,8 +80,12 @@
                             <li class="nav-item">
                                 <a href="about.html" class="nav-link">About Us</a>
                             </li>
+                            <li class="nav-item">
+                                <a href="coming-soon.html" class="nav-link">Coming Soon</a>
+                            </li>
                         </ul>
-                        <a class="theme-btn" href="https://callsharks.com" target="_blank">Sign Up</a>
+                        <a class="theme-btn" href="signup">Sign Up</a>
+                        <a class="theme-btn theme-btn-alt ms-2" href="login">Log In</a>
                         <div class="px-2 js-darkmode-btn" title="Toggle dark mode">
                             <label for="something" class="tab-btn tab-btns">
                                 <ion-icon name="moon"></ion-icon>
@@ -115,7 +119,7 @@
                             lenders, brokers, and call centers. Start with mortgages today, and scale into insurance
                             and other services as we expand.</p>
                         <div class="d-flex flex-column flex-sm-row justify-content-center mt-25 subscribe-field">
-                            <a href="https://callsharks.com" data-wow-delay="0.5s"
+                            <a href="signup" data-wow-delay="0.5s"
                                 class="wow fadeInUp theme-btn theme-btn-lg mt-50">Start your subscription
                                 <i class="arrow_right-up"></i>
                             </a>
@@ -138,23 +142,23 @@
                     teams looking for consistent, compliant lead flow.</p>
                 <div class="row gy-md-0 gy-4 align-items-center h-100">
                     <div class="col">
-                        <a href="#"><img class="clients-logo img-fluid wow fadeInRight" data-wow-delay="0.1s"
+                        <a href="about.html"><img class="clients-logo img-fluid wow fadeInRight" data-wow-delay="0.1s"
                                 src="{{ url_for('static', filename='img/saas-app/c_logo_1.png') }}" alt="logo"></a>
                     </div>
                     <div class="col">
-                        <a href="#"><img class="clients-logo img-fluid wow fadeInRight" data-wow-delay="0.3s"
+                        <a href="about.html"><img class="clients-logo img-fluid wow fadeInRight" data-wow-delay="0.3s"
                                 src="{{ url_for('static', filename='img/saas-app/c_logo_2.png') }}" alt="logo"></a>
                     </div>
                     <div class="col">
-                        <a href="#"><img class="clients-logo img-fluid wow fadeInRight" data-wow-delay="0.5s"
+                        <a href="about.html"><img class="clients-logo img-fluid wow fadeInRight" data-wow-delay="0.5s"
                                 src="{{ url_for('static', filename='img/saas-app/c_logo_3.png') }}" alt="logo"></a>
                     </div>
                     <div class="col">
-                        <a href="#"><img class="clients-logo img-fluid wow fadeInRight" data-wow-delay="0.7s"
+                        <a href="about.html"><img class="clients-logo img-fluid wow fadeInRight" data-wow-delay="0.7s"
                                 src="{{ url_for('static', filename='img/saas-app/c_logo_4.png') }}" alt="logo"></a>
                     </div>
                     <div class="col">
-                        <a href="#"><img class="clients-logo img-fluid wow fadeInRight" data-wow-delay="0.7s"
+                        <a href="about.html"><img class="clients-logo img-fluid wow fadeInRight" data-wow-delay="0.7s"
                                 src="{{ url_for('static', filename='img/saas-app/c_logo_5.png') }}" alt="logo"></a>
                     </div>
                 </div>
@@ -584,7 +588,7 @@
                     <p>There are many variations of passages of Lorem Ipsum available.</p>
                     <div class="d-flex flex-column flex-sm-row mt-30">
                         <input type="email" class="form-control" placeholder="Enter Email address">
-                        <a href="#" class="input-append theme-btn theme-btn-lg ms-sm-3">Subscribe</a>
+                        <a href="signup" class="input-append theme-btn theme-btn-lg ms-sm-3">Subscribe</a>
                     </div>
                     <ul class="list-unstyled feature-list">
                         <li><i class="fas fa-check-circle"></i> Get 30 day free trial</li>
@@ -594,6 +598,47 @@
             </div>
             <img class="saas_dash_img wow fadeInUp" data-parallax='{"x": -40, "y": 50}' data-wow-delay="0.2s"
                 src="{{ url_for('static', filename='img/saas-app/subscribe-dashboard.png') }}" alt="">
+        </section>
+        <section class="saas-features-card-area bg-white pt-120 pb-120">
+            <div class="container">
+                <div class="saas-section-title text-center mb-60">
+                    <h2>Coming soon: <span>new lead categories</span></h2>
+                    <p>CallSharks is expanding beyond mortgages with new verticals for growth-minded teams.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature-card-widget-8 saas-feature-card">
+                            <h4>Insurance leads</h4>
+                            <p>Verified shoppers ready for policy reviews.</p>
+                            <span class="badge bg-secondary">Coming soon</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature-card-widget-8 saas-feature-card">
+                            <h4>Solar leads</h4>
+                            <p>Homeowners exploring solar financing.</p>
+                            <span class="badge bg-secondary">Coming soon</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature-card-widget-8 saas-feature-card">
+                            <h4>Home services</h4>
+                            <p>Service-ready homeowners seeking providers.</p>
+                            <span class="badge bg-secondary">Coming soon</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature-card-widget-8 saas-feature-card">
+                            <h4>Real estate partnerships</h4>
+                            <p>Buyer and seller readiness signals.</p>
+                            <span class="badge bg-secondary">Coming soon</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-40">
+                    <a href="coming-soon.html" class="theme-btn theme-btn-alt">View launch roadmap</a>
+                </div>
+            </div>
         </section>
         <!-- footer start -->
         <footer class="saas-footer-area bg-white">
@@ -653,9 +698,9 @@
                         <div class="col-lg-7 col-md-6">
                             <div class="d-flex">
                                 <div class="f-social">
-                                    <a href="#"><i class="social_facebook"></i></a>
-                                    <a href="#"><i class="social_youtube"></i></a>
-                                    <a href="#"><i class="social_instagram"></i></a>
+                                    <a href="contact.html"><i class="social_facebook"></i></a>
+                                    <a href="contact.html"><i class="social_youtube"></i></a>
+                                    <a href="contact.html"><i class="social_instagram"></i></a>
                                 </div>
                                 <p>2025 <a href="https://callsharks.com" target="_blank">CallSharks</a>. All rights
                                     reserved</p>
@@ -663,12 +708,12 @@
                         </div>
                         <div class="col-lg-5 col-md-6">
                             <ul class="list-unstyled payment-list">
-                                <li><a href="#"><img src="{{ url_for('static', filename='img/saas-app/visa.png') }}" alt=""></a></li>
-                                <li><a href="#"><img src="{{ url_for('static', filename='img/saas-app/amazon.png') }}" alt=""></a></li>
-                                <li><a href="#"><img src="{{ url_for('static', filename='img/saas-app/stripe.png') }}" alt=""></a></li>
-                                <li><a href="#"><img src="{{ url_for('static', filename='img/saas-app/paypal.png') }}" alt=""></a></li>
-                                <li><a href="#"><img src="{{ url_for('static', filename='img/saas-app/amex.png') }}" alt=""></a></li>
-                                <li><a href="#"><img src="{{ url_for('static', filename='img/saas-app/discover.png') }}" alt=""></a></li>
+                                <li><a href="billing.html"><img src="{{ url_for('static', filename='img/saas-app/visa.png') }}" alt=""></a></li>
+                                <li><a href="billing.html"><img src="{{ url_for('static', filename='img/saas-app/amazon.png') }}" alt=""></a></li>
+                                <li><a href="billing.html"><img src="{{ url_for('static', filename='img/saas-app/stripe.png') }}" alt=""></a></li>
+                                <li><a href="billing.html"><img src="{{ url_for('static', filename='img/saas-app/paypal.png') }}" alt=""></a></li>
+                                <li><a href="billing.html"><img src="{{ url_for('static', filename='img/saas-app/amex.png') }}" alt=""></a></li>
+                                <li><a href="billing.html"><img src="{{ url_for('static', filename='img/saas-app/discover.png') }}" alt=""></a></li>
                             </ul>
                         </div>
                     </div>

@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>CallSharks - Subscription Started</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" media="all" />
+</head>
+
+<body>
+    <main>
+        <section class="contact-area pt-120 pb-120">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="contact-form text-center">
+                            <h1 class="mb-20">Stripe subscription initiated</h1>
+                            <p>We recorded a <strong>{{ plan }}</strong> subscription request for {{ email or "your account" }} through Stripe Subscriptions.</p>
+                            <p>Our team will follow up with the secure Stripe checkout link.</p>
+                            <div class="mt-40">
+                                <a href="login" class="theme-btn">Return to login</a>
+                                <a href="contact.html" class="theme-btn theme-btn-alt">Contact support</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
