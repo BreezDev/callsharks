@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>CallSharks - Stripe Subscription</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" media="all" />
+</head>
+
+<body>
+    <main>
+        <section class="contact-area pt-120 pb-120">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <div class="contact-form">
+                            <h1 class="mb-20">Start your Stripe subscription</h1>
+                            <p>CallSharks subscriptions are billed through Stripe Subscriptions. Submit this form and we will generate your Stripe checkout link.</p>
+                            <form action="/subscribe" method="post">
+                                <div class="mb-25">
+                                    <label class="form-label">Account email</label>
+                                    <input type="email" class="form-control" name="email" required>
+                                </div>
+                                <div class="mb-25">
+                                    <label class="form-label">Plan</label>
+                                    <select class="form-select" name="plan">
+                                        <option value="Starter">Starter - 50 leads / month</option>
+                                        <option value="Growth" selected>Growth - 150 leads / month</option>
+                                        <option value="Scale">Scale - 300+ leads / month</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="theme-btn">Request Stripe checkout</button>
+                            </form>
+                            <div class="mt-30">
+                                <a href="signup" class="theme-btn theme-btn-alt">Return to signup</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

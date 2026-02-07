@@ -6,7 +6,7 @@ is the file you need to edit to change the look of the
 template.
 ---------------------------------------------------- */
 /*=====================================================================
-@Template Name: Banca
+@Template Name: CallSharks
 @Version: 1.0.0
 
 @Default Styles
@@ -7612,9 +7612,9 @@ header .header-top .header-info-right ul li i {
 }
 
 /*----------------------------------------*/
-/*  Banca Corporate Area CSS
+/*  CallSharks Corporate Area CSS
   /*----------------------------------------*/
-.banca-corporate .section-title p {
+.callsharks-corporate .section-title p {
   font-size: 18px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -7622,18 +7622,18 @@ header .header-top .header-info-right ul li i {
   max-width: 460px;
   margin: auto;
 }
-.banca-corporate .section-title p span {
+.callsharks-corporate .section-title p span {
   font-size: 22px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: var(--secondary_color);
 }
-.banca-corporate .single-brand {
+.callsharks-corporate .single-brand {
   display: inline-block;
   transition: all 0.3s ease-out;
   box-shadow: none;
 }
-.banca-corporate .single-brand:hover {
+.callsharks-corporate .single-brand:hover {
   box-shadow: var(--theme-dropshadow);
 }
 
@@ -10473,7 +10473,7 @@ body.body_dark .feature-calculator .calculator .calculator-slider .range-input {
   background-color: transparent;
   color: var(--black_700);
 }
-body.body_dark .banca-corporate .single-brand img {
+body.body_dark .callsharks-corporate .single-brand img {
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(310deg) brightness(105%) contrast(101%);
 }
 body.body_dark .pricing_tab_btn.active span,
