@@ -1,232 +1,94 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>CallSharks - Sign Up</title>
-    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}" type="image/x-icon">
-
-    <!-- CSS here -->
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" media="all" />
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/elegant-icons.min.css') }}" media="all" />
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/all.min.css') }}" media="all" />
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate.css') }}" media="all" />
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/slick.css') }}" media="all" />
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/slick-theme.css') }}" media="all" />
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/nice-select.css') }}" media="all" />
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/nouislider.min.css') }}" media="all" />
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/jquery.fancybox.min.css') }}" media="all" />
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/flatpickr.min.css') }}" media="all" />
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/default.css') }}" media="all" />
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" media="all" />
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive.css') }}" media="all" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CallSharks | Sign Up</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
 </head>
-
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="header-menu header-menu-2" id="sticky">
-            <nav class="navbar navbar-expand-lg ">
-                <div class="container">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="{{ url_for('static', filename='img/logo/Logo-2.png') }}"
-                            srcset="{{ url_for('static', filename='img/logo/Logo-2@2x.png') }} 2x" alt="logo">
-                    </a>
-                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="menu_toggle">
-                            <span class="hamburger">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </span>
-                            <span class="hamburger-cross">
-                                <span></span>
-                                <span></span>
-                            </span>
-                        </span>
-                    </button>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    <div class="container">
+      <a class="navbar-brand" href="/">CallSharks</a>
+      <div class="ms-auto d-flex gap-2">
+        <a class="btn btn-outline-light" href="/login">Log In</a>
+      </div>
+    </div>
+  </nav>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav menu ms-5 me-auto">
-                            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                            <li class="nav-item"><a href="loan.html" class="nav-link">Our Leads</a></li>
-                            <li class="nav-item"><a href="coming-soon.html" class="nav-link">Coming Soon</a></li>
-                            <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
-                        </ul>
-                        <a class="theme-btn" href="login" >Log In</a>
-                    </div>
-                </div>
-            </nav>
+  <main class="container py-5">
+    <h1>Create account</h1>
+    <p class="text-muted">Get mortgage-ready leads and choose a subscription plan.</p>
+    {% if error %}<div class="alert alert-danger">{{ error }}</div>{% endif %}
+    <form method="post" action="/signup" class="card card-body shadow-sm">
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label class="form-label">Full name</label>
+          <input class="form-control" type="text" name="full_name" required />
         </div>
-    </header>
-    <!-- Header end-->
-
-    <main>
-        <section class="breadcrumb-area" style="background-image: url('{{ url_for('static', filename='img/breadcrumb/bg.png') }}');">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="breadcrumb-content">
-                            <h1>Create your CallSharks account</h1>
-                            <p>Tell us what you want, the industries you serve, and how many mortgage-ready leads you need.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact-area pt-120 pb-120">
-            <div class="container">
-                {% if error %}
-                <div class="alert alert-danger" role="alert">{{ error }}</div>
-                {% endif %}
-                <div class="row">
-                    <div class="col-lg-7">
-                        <div class="contact-form">
-                            <h2 class="mb-20">Account setup</h2>
-                            <form action="/signup" method="post">
-                                <div class="row">
-                                    <div class="col-md-12 mb-25">
-                                        <label class="form-label">Account type</label>
-                                        <div class="d-flex flex-wrap gap-4">
-                                            <label class="form-check-label">
-                                                <input class="form-check-input" type="radio" name="account_type" value="individual" checked>
-                                                Individual
-                                            </label>
-                                            <label class="form-check-label">
-                                                <input class="form-check-input" type="radio" name="account_type" value="business">
-                                                Business
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 mb-25">
-                                        <label class="form-label">Full name</label>
-                                        <input type="text" class="form-control" name="full_name" required>
-                                    </div>
-                                    <div class="col-md-6 mb-25">
-                                        <label class="form-label">Business name (if applicable)</label>
-                                        <input type="text" class="form-control" name="company_name">
-                                    </div>
-                                    <div class="col-md-6 mb-25">
-                                        <label class="form-label">Email</label>
-                                        <input type="email" class="form-control" name="email" required>
-                                    </div>
-                                    <div class="col-md-6 mb-25">
-                                        <label class="form-label">Password</label>
-                                        <input type="password" class="form-control" name="password" required>
-                                    </div>
-                                    <div class="col-md-6 mb-25">
-                                        <label class="form-label">Industry</label>
-                                        <select class="form-select" name="industry" required>
-                                            <option value="">Select your primary industry</option>
-                                            <option value="Mortgage Lending">Mortgage Lending</option>
-                                            <option value="Real Estate">Real Estate</option>
-                                            <option value="Insurance">Insurance (Coming Soon)</option>
-                                            <option value="Home Services">Home Services (Coming Soon)</option>
-                                            <option value="Solar">Solar (Coming Soon)</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-6 mb-25">
-                                        <label class="form-label">Team size</label>
-                                        <select class="form-select" name="team_size">
-                                            <option value="">Choose team size</option>
-                                            <option value="Solo">Solo</option>
-                                            <option value="2-5">2-5</option>
-                                            <option value="6-20">6-20</option>
-                                            <option value="21+">21+</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-12 mb-25">
-                                        <label class="form-label">What do you want to achieve with CallSharks?</label>
-                                        <textarea class="form-control" name="lead_goals" rows="3" placeholder="Example: 30 mortgage-ready leads per week for refinance campaigns."></textarea>
-                                    </div>
-                                    <div class="col-md-6 mb-25">
-                                        <label class="form-label">Preferred regions</label>
-                                        <input type="text" class="form-control" name="regions" placeholder="State, city, or multi-state coverage">
-                                    </div>
-                                    <div class="col-md-6 mb-25">
-                                        <label class="form-label">Lead volume goal</label>
-                                        <input type="text" class="form-control" name="desired_volume" placeholder="Example: 100 leads / month">
-                                    </div>
-                                    <div class="col-md-12 mb-25">
-                                        <label class="form-label">Lead types you want</label>
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" name="lead_types" value="Mortgage Purchase">
-                                                    <label class="form-check-label">Mortgage Purchase</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" name="lead_types" value="Refinance">
-                                                    <label class="form-check-label">Refinance</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" name="lead_types" value="HELOC">
-                                                    <label class="form-check-label">HELOC</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" name="lead_types" value="Insurance (Coming Soon)">
-                                                    <label class="form-check-label">Insurance <span class="badge bg-secondary">Coming soon</span></label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" name="lead_types" value="Solar (Coming Soon)">
-                                                    <label class="form-check-label">Solar <span class="badge bg-secondary">Coming soon</span></label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" name="lead_types" value="Home Services (Coming Soon)">
-                                                    <label class="form-check-label">Home Services <span class="badge bg-secondary">Coming soon</span></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 mb-25">
-                                        <label class="form-label">Subscription plan (Stripe subscriptions)</label>
-                                        <select class="form-select" name="plan">
-                                            <option value="Starter">Starter - 50 leads / month</option>
-                                            <option value="Growth" selected>Growth - 150 leads / month</option>
-                                            <option value="Scale">Scale - 300+ leads / month</option>
-                                        </select>
-                                        <small class="text-muted">All plans are billed securely through Stripe Subscriptions.</small>
-                                    </div>
-                                </div>
-                                <button type="submit" class="theme-btn">Create account</button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="contact-info">
-                            <h3 class="mb-15">Why teams choose CallSharks</h3>
-                            <ul class="list-unstyled">
-                                <li class="mb-3">Mortgage-ready leads verified for intent and contact quality.</li>
-                                <li class="mb-3">Personalized onboarding based on your goals and industry focus.</li>
-                                <li class="mb-3">Stripe-powered subscriptions with flexible lead volume tiers.</li>
-                            </ul>
-                            <div class="mt-40">
-                                <h4>Already have an account?</h4>
-                                <a href="login" class="theme-btn theme-btn-alt">Log in to CallSharks</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+        <div class="col-md-6">
+          <label class="form-label">Email</label>
+          <input class="form-control" type="email" name="email" required />
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Password</label>
+          <input class="form-control" type="password" name="password" minlength="8" required />
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Confirm password</label>
+          <input class="form-control" type="password" name="confirm_password" minlength="8" required />
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Account type</label>
+          <select class="form-select" name="account_type">
+            <option value="individual">Individual</option>
+            <option value="business">Business</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Company name</label>
+          <input class="form-control" type="text" name="company_name" />
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Industry</label>
+          <input class="form-control" type="text" name="industry" placeholder="Mortgage broker, lender, call center" />
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Team size</label>
+          <input class="form-control" type="text" name="team_size" />
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Lead goals</label>
+          <input class="form-control" type="text" name="lead_goals" />
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Desired volume</label>
+          <input class="form-control" type="text" name="desired_volume" />
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Regions</label>
+          <input class="form-control" type="text" name="regions" />
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Lead types</label>
+          <div class="d-flex flex-wrap gap-3">
+            <label><input type="checkbox" name="lead_types" value="Mortgage Purchase" /> Mortgage Purchase</label>
+            <label><input type="checkbox" name="lead_types" value="Refinance" /> Refinance</label>
+            <label><input type="checkbox" name="lead_types" value="HELOC" /> HELOC</label>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <label class="form-label">Subscription plan</label>
+          <select class="form-select" name="plan">
+            {% for plan in plans %}
+            <option value="{{ plan.name }}">{{ plan.name }} — {{ plan.lead_volume }} leads/mo — ${{ '%.2f'|format(plan.monthly_price_cents/100) }} ({{ plan.trial_days }} day trial)</option>
+            {% endfor %}
+          </select>
+        </div>
+      </div>
+      <button class="btn btn-primary mt-4" type="submit">Create account</button>
+    </form>
+  </main>
 </body>
-
 </html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard | CallSharks</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+</head>
+<body class="bg-light">
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="/admin">CallSharks Admin</a>
+    <div class="d-flex gap-2">
+      <a class="btn btn-outline-light btn-sm" href="/dashboard">Client view</a>
+      <a class="btn btn-outline-light btn-sm" href="/logout">Log out</a>
+    </div>
+  </div>
+</nav>
+
+<main class="container py-4">
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}<div class="alert alert-info">{{ messages[0] }}</div>{% endif %}
+  {% endwith %}
+  <h1>Admin control center</h1>
+  <p class="text-muted">Manage plans, coupons, lead imports, notifications, and real-time subscription status.</p>
+
+  <div class="row g-3 mb-3" id="realtime-cards">
+    <div class="col-md-4"><div class="card"><div class="card-body"><h6>Clients</h6><div id="metric-users">-</div></div></div></div>
+    <div class="col-md-4"><div class="card"><div class="card-body"><h6>Active subscriptions</h6><div id="metric-subs">-</div></div></div></div>
+    <div class="col-md-4"><div class="card"><div class="card-body"><h6>Lead imports</h6><div id="metric-imports">-</div></div></div></div>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-lg-6">
+      <div class="card shadow-sm"><div class="card-body">
+        <h5>Editable plans</h5>
+        <form method="post" action="/admin/plans" class="row g-2 mb-3">
+          <input name="plan_id" class="form-control" placeholder="Plan ID (optional for update)" />
+          <input required name="name" class="form-control" placeholder="Name" />
+          <input name="stripe_price_id" class="form-control" placeholder="Stripe price ID" />
+          <input type="number" name="lead_volume" class="form-control" placeholder="Lead volume" />
+          <input type="number" name="monthly_price_cents" class="form-control" placeholder="Price cents" />
+          <input type="number" name="trial_days" class="form-control" placeholder="Trial days" />
+          <label><input type="checkbox" name="active" checked /> Active</label>
+          <button class="btn btn-primary" type="submit">Save plan</button>
+        </form>
+        <ul class="list-group list-group-flush">
+          {% for p in plans %}<li class="list-group-item px-0">#{{ p.id }} {{ p.name }} · ${{ '%.2f'|format(p.monthly_price_cents/100) }} · {{ p.lead_volume }} leads · trial {{ p.trial_days }} days</li>{% endfor %}
+        </ul>
+      </div></div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="card shadow-sm"><div class="card-body">
+        <h5>Coupons + free trial codes</h5>
+        <form method="post" action="/admin/coupons" class="row g-2 mb-3">
+          <input required name="code" class="form-control" placeholder="Code" />
+          <input type="number" name="discount_percent" class="form-control" placeholder="Discount %" />
+          <input type="number" name="free_trial_days" class="form-control" placeholder="Free trial days" />
+          <input type="number" name="max_redemptions" class="form-control" placeholder="Max redemptions" />
+          <label><input type="checkbox" name="active" checked /> Active</label>
+          <button class="btn btn-primary" type="submit">Save coupon</button>
+        </form>
+        <ul class="list-group list-group-flush">
+          {% for c in coupons %}<li class="list-group-item px-0">{{ c.code }} · {{ c.discount_percent or 0 }}% off · +{{ c.free_trial_days }} trial days · {{ 'active' if c.active else 'inactive' }}</li>{% endfor %}
+        </ul>
+      </div></div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="card shadow-sm"><div class="card-body">
+        <h5>Upload leads CSV</h5>
+        <form method="post" action="/admin/upload-leads" enctype="multipart/form-data" class="row g-2">
+          <input class="form-control" type="file" name="csv_file" accept=".csv" required />
+          <input class="form-control" name="category" placeholder="Category (mortgage, heloc...)" />
+          <input class="form-control" type="number" name="owner_user_id" placeholder="Assign to user ID (optional)" />
+          <button class="btn btn-primary" type="submit">Import CSV</button>
+        </form>
+      </div></div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="card shadow-sm"><div class="card-body">
+        <h5>Customize import mapping + category</h5>
+        <form method="post" action="/admin/imports/1/categorize" id="categorize-form" class="row g-2 mb-3">
+          <input class="form-control" id="import-id" type="number" value="1" placeholder="Import ID" />
+          <input class="form-control" name="category" placeholder="Updated category" />
+          <textarea class="form-control" name="column_mapping" placeholder='{"email":"Email","phone":"Phone"}'></textarea>
+          <button class="btn btn-primary" type="submit">Update import</button>
+        </form>
+        <ul class="list-group list-group-flush">
+          {% for imp in imports %}
+            <li class="list-group-item px-0">Import #{{ imp.id }} · {{ imp.file_name }} · {{ imp.row_count }} rows · {{ imp.category }}</li>
+          {% endfor %}
+        </ul>
+      </div></div>
+    </div>
+
+    <div class="col-12">
+      <div class="card shadow-sm"><div class="card-body">
+        <h5>Recent users + subscriptions (real-time feed)</h5>
+        <div class="table-responsive">
+          <table class="table table-sm" id="subs-table"><thead><tr><th>Name</th><th>Email</th><th>Plan</th><th>Status</th><th>Updated</th></tr></thead><tbody></tbody></table>
+        </div>
+      </div></div>
+    </div>
+
+    <div class="col-12">
+      <div class="card shadow-sm"><div class="card-body">
+        <h5>Notifications</h5>
+        <ul class="list-group list-group-flush">
+          {% for n in notifications %}<li class="list-group-item px-0">{{ n.type }} · {{ n.message }} <span class="text-muted">{{ n.created_at }}</span></li>{% endfor %}
+        </ul>
+      </div></div>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.getElementById('categorize-form').addEventListener('submit', function(e){
+    const importId = document.getElementById('import-id').value || '1';
+    this.action = `/admin/imports/${importId}/categorize`;
+  });
+
+  async function refreshRealtime() {
+    const res = await fetch('/api/admin/realtime');
+    if (!res.ok) return;
+    const data = await res.json();
+    document.getElementById('metric-users').innerText = data.totals.users;
+    document.getElementById('metric-subs').innerText = data.totals.active_subscriptions;
+    document.getElementById('metric-imports').innerText = data.totals.lead_imports;
+    const tbody = document.querySelector('#subs-table tbody');
+    tbody.innerHTML = '';
+    data.subscriptions.forEach(item => {
+      const tr = document.createElement('tr');
+      tr.innerHTML = `<td>${item.full_name || ''}</td><td>${item.email || ''}</td><td>${item.plan_name || '-'}</td><td>${item.status || '-'}</td><td>${item.updated_at || '-'}</td>`;
+      tbody.appendChild(tr);
+    });
+  }
+  refreshRealtime();
+  setInterval(refreshRealtime, 5000);
+</script>
+</body>
+</html>

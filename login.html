@@ -1,91 +1,36 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>CallSharks - Log In</title>
-    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}" type="image/x-icon">
-
-    <!-- CSS here -->
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" media="all" />
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/elegant-icons.min.css') }}" media="all" />
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/all.min.css') }}" media="all" />
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate.css') }}" media="all" />
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/default.css') }}" media="all" />
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" media="all" />
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive.css') }}" media="all" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CallSharks | Log In</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
 </head>
-
 <body>
-    <header class="header">
-        <div class="header-menu header-menu-2" id="sticky">
-            <nav class="navbar navbar-expand-lg ">
-                <div class="container">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="{{ url_for('static', filename='img/logo/Logo-2.png') }}"
-                            srcset="{{ url_for('static', filename='img/logo/Logo-2@2x.png') }} 2x" alt="logo">
-                    </a>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav menu ms-5 me-auto">
-                            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                            <li class="nav-item"><a href="loan.html" class="nav-link">Our Leads</a></li>
-                            <li class="nav-item"><a href="coming-soon.html" class="nav-link">Coming Soon</a></li>
-                            <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
-                        </ul>
-                        <a class="theme-btn" href="signup">Sign Up</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    <div class="container">
+      <a class="navbar-brand" href="/">CallSharks</a>
+      <div class="ms-auto d-flex gap-2">
+        <a class="btn btn-outline-light" href="/signup">Sign Up</a>
+      </div>
+    </div>
+  </nav>
 
-    <main>
-        <section class="breadcrumb-area" style="background-image: url('{{ url_for('static', filename='img/breadcrumb/bg.png') }}');">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="breadcrumb-content">
-                            <h1>Log in to CallSharks</h1>
-                            <p>Access your mortgage lead subscriptions and preferences.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact-area pt-120 pb-120">
-            <div class="container">
-                {% if error %}
-                <div class="alert alert-danger" role="alert">{{ error }}</div>
-                {% endif %}
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="contact-form">
-                            <h2 class="mb-20">Welcome back</h2>
-                            <form action="/login" method="post">
-                                <div class="mb-25">
-                                    <label class="form-label">Email</label>
-                                    <input type="email" class="form-control" name="email" required>
-                                </div>
-                                <div class="mb-25">
-                                    <label class="form-label">Password</label>
-                                    <input type="password" class="form-control" name="password" required>
-                                </div>
-                                <button type="submit" class="theme-btn">Log in</button>
-                            </form>
-                            <div class="mt-30">
-                                <p>New to CallSharks? <a href="signup">Create an account</a>.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+  <main class="container py-5" style="max-width: 680px;">
+    <h1 class="mb-3">Log in</h1>
+    <p class="text-muted">Access your dashboard and subscription details.</p>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}<div class="alert alert-info">{{ messages[0] }}</div>{% endif %}
+    {% endwith %}
+    {% if error %}<div class="alert alert-danger">{{ error }}</div>{% endif %}
+    <form method="post" action="/login" class="card card-body shadow-sm">
+      <label class="form-label">Email</label>
+      <input class="form-control mb-3" type="email" name="email" required />
+      <label class="form-label">Password</label>
+      <input class="form-control mb-4" type="password" name="password" minlength="8" required />
+      <button class="btn btn-primary" type="submit">Log In</button>
+    </form>
+  </main>
 </body>
-
 </html>
