@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Client Dashboard | CallSharks</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+</head>
+<body class="bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="/">CallSharks</a>
+    <div class="ms-auto d-flex gap-2">
+      {% if active_user and active_user.role == 'admin' %}<a class="btn btn-outline-info btn-sm" href="/admin">Admin</a>{% endif %}
+      <a class="btn btn-outline-light btn-sm" href="/logout">Log out</a>
+    </div>
+  </div>
+</nav>
+
+<main class="container py-4">
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}<div class="alert alert-info">{{ messages[0] }}</div>{% endif %}
+  {% endwith %}
+  <h1 class="mb-1">Welcome, {{ user.full_name }}</h1>
+  <p class="text-muted">Manage your plan, coupon, and leads.</p>
+
+  <div class="row g-4">
+    <div class="col-lg-6">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <h5>Subscription</h5>
+          {% if subscription %}
+            <p class="mb-1"><strong>Plan:</strong> {{ subscription.plan_name }}</p>
+            <p class="mb-1"><strong>Status:</strong> <span class="badge bg-primary">{{ subscription.status }}</span></p>
+            <p class="mb-3"><strong>Trial ends:</strong> {{ subscription.trial_ends_at or 'N/A' }}</p>
+          {% else %}
+            <p>No subscription yet.</p>
+          {% endif %}
+
+          <form action="/subscribe/checkout" method="post" class="row g-2">
+            <div class="col-md-6">
+              <label class="form-label">Plan</label>
+              <select class="form-select" name="plan_id" required>
+                <option value="1">Starter</option>
+                <option value="2">Growth</option>
+                <option value="3">Scale</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Coupon / Trial code</label>
+              <input class="form-control" name="coupon_code" placeholder="Optional" />
+            </div>
+            <div class="col-12"><button class="btn btn-primary" type="submit">Start checkout</button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <h5>Notifications</h5>
+          <ul class="list-group list-group-flush">
+            {% for n in notifications %}
+              <li class="list-group-item px-0"><strong>{{ n.type }}</strong> · {{ n.message }} <span class="text-muted small d-block">{{ n.created_at }}</span></li>
+            {% else %}
+              <li class="list-group-item px-0">No notifications yet.</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5>Your leads</h5>
+          <div class="table-responsive">
+            <table class="table table-sm align-middle">
+              <thead><tr><th>ID</th><th>Category</th><th>Status</th><th>Data</th><th>Created</th></tr></thead>
+              <tbody>
+                {% for lead in leads %}
+                <tr>
+                  <td>{{ lead.id }}</td>
+                  <td>{{ lead.category }}</td>
+                  <td>{{ lead.status }}</td>
+                  <td><code>{{ lead.data_json[:90] }}{% if lead.data_json|length > 90 %}...{% endif %}</code></td>
+                  <td>{{ lead.created_at }}</td>
+                </tr>
+                {% else %}
+                <tr><td colspan="5" class="text-center text-muted">No leads assigned yet.</td></tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+</body>
+</html>
